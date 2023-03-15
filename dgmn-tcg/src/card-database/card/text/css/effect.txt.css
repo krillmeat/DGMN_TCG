@@ -1,0 +1,42 @@
+.card-text .card-effect{
+  position: absolute;
+  left: 2.2em;
+  width: calc(100% - 4.5em);
+  font-family: "adelle-sans-condensed", sans-serif;
+
+  top: 20.75em; 
+  color: #FFF;
+}
+
+  .card-text .card-effect.shifted-up{ top: 19.85em }
+  .card-text .card-effect.tall{ top: 19.2em }
+  .card-text .card-effect.no-inherit{ top: 24.2em }
+  .card-text .card-effect.tall.no-inherit{ top: 23em }
+
+.card-text .card-effect > p{
+  font-size: .85em;
+  letter-spacing: .04em;
+  margin-bottom: .35em;
+}
+
+
+
+.card-text .card-effect.cnd-1 > p{ letter-spacing: .02em }
+.card-text .card-effect.cnd-2 > p{ letter-spacing: 0em }
+.card-text .card-effect.cnd-3 > p{ letter-spacing: -.02em }
+.card-text .card-effect.cnd-4 > p{ letter-spacing: -.03em }
+
+.card-text .card-effect.txt-sm-1 > p { font-size: .75em; margin-bottom: .6em } 
+  .card-text .card-effect.txt-sm-1 > p .tag{ font-size: .9067em }
+.card-text .card-effect.txt-sm-2 > p { font-size: .725em; margin-bottom: .5em } 
+  .card-text .card-effect.txt-sm-2 > p .tag{ font-size: .938em }
+.card-text .card-effect.txt-sm-3 > p { font-size: .7em; margin-bottom: .4em }
+  .card-text .card-effect.txt-sm-3 > p .tag{ font-size: .9715em }
+
+.card-text .card-effect.xros-1 > p:last-of-type{ font-size: .85em !important; letter-spacing: .04em !important }
+  .card-text .card-effect.xros-1 > p:last-of-type .tag{ font-size: .8em }
+
+.card-text .card-effect.xros-2 > p:last-of-type,
+.card-text .card-effect.xros-2 > p:nth-last-of-type(2){ font-size: .84em !important; letter-spacing: 0em !important }
+  .card-text .card-effect.xros-2 > p:last-of-type,
+  .card-text .card-effect.xros-2 > p:nth-last-of-type(-n+2) .tag{ font-size: .81em }

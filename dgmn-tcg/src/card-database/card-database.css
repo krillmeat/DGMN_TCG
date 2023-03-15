@@ -1,0 +1,18 @@
+.card-database{ 
+  width: 100%;
+  padding: .8rem;
+    padding-top: calc(8.7rem + .8rem)
+}
+.card-list{ 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-list > .card{
+  margin: 8px;
+}
+
+.card-wrapper{ width: 50%; padding: .2rem; }
+.card-wrapper img{ width: 100%; min-height: 200px }

@@ -1,0 +1,19 @@
+.card-text .spec-evo{
+  position: absolute;
+  left: 0;
+
+  top: -2.3em;
+}
+
+.card-text .spec-evo > p{
+  display: inline-block;
+  padding: .2em .6em;
+  background: #000;
+  border-radius: 6px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-style: italic;
+  font-size: .7em;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
