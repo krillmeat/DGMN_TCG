@@ -5,10 +5,15 @@
 }
 .card-list{ 
   width: 100%; 
+    min-width: 375px;
   display: flex;
   justify-content: center;
     flex-wrap: wrap;
 }
+
+  @media (min-width: 800px){
+    .card-list{ padding-left: 25rem }
+  }
 
 .card-list > .card{
   margin: 8px;

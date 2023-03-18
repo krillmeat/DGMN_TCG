@@ -29,7 +29,7 @@ const CardList = () => {
 
   return (<div className='card-list'>
     {shownCards.length > 0 ? shownCards.map((card,index) => {
-      return <Card key={card.set+index} set={card.set} card={card.no} size='xxl' />
+      return <Card key={card.set+index} set={card.set} card={card.no} size='xl' />
     }) : <p>Nothing found</p>}
   </div>)
 }

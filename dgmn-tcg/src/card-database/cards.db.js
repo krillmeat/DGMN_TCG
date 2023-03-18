@@ -1,3 +1,5 @@
+import { BT1 } from "./db/BT1.db";
+
 const CARDS = {
   ST1: [
     {type: 'egg',name:'Koromon', no: 1, set: 'ST1',
@@ -121,29 +123,7 @@ const CARDS = {
       form: 'In-Training', traits: ['Lesser'],
       inherit: ["<<Your Turn>>This Digimon gets +1000 DP when","battling an opponent's Digimon that has no","digivolution cards."]},
   ],
-  BT1: [
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},
-    {
-      type:'tamer', name:'Mimi Tachikawa', no: 89, set: 'BT1', rarity: 'R',
-      colors: ['green'],
-      traits: [],
-      cost: 4,
-      effect:["<<Start of Your Turn>> If you have 2 or less memory, set your","memory to 3.","<<Main>> If you have a level 5 or higher green Digimon in play, you","can suspend this Tamer to hatch 1 Digi-Egg card to an empty","space in your breeding area, or move 1 level 3 or higher Digimon","from your breeding area to your battle area."],
-      inherit: ["<<Security>> Play this card without paying its","memory cost."],
-      special: ['condensed-card-effect']
-    },{}, // 90
-    {},{},{},{},{},{},{},{},{},{}, // 100
-    {},{},{},{},{},{},{},{},{},{}, // 110
-    {},{} // 112
-  ],
+  BT1: BT1,
   BT5: [
     {},{},{},{},{},{},{},{},{},{},
     {},{},{},{},{},{},{},{},{},{},

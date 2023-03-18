@@ -25,6 +25,8 @@ export const getTagColor = tagText =>{
     case 'Save':
     case 'Blitz':
     case 'Rush':
+    case 'Jamming':
+    case 'Piercing':
       return 'orange';
     case 'Once Per Turn':
       return 'purple';

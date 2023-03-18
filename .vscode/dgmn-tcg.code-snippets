@@ -2,10 +2,10 @@
   "DB Egg": {
     "prefix": "db_egg",
     "body": [
-      "{ type:'egg', name:'$1', no:$2, set:'$3',",
-      "  level: 2, colors: ['$4'],",
+      "{ type:'egg', name:'$1', no:$2, set:'$3', rarity: '$4',",
+      "  level: 2, colors: ['$5'],",
       "  form: 'In-Training', traits: ['Lesser'],",
-      "  inherit: [\"$5\"]},"
+      "  inherit: [\"$6\"]},"
     ]
   },
   "DB Dgmn": {

@@ -6,6 +6,8 @@ import MainNav from './main-nav';
 import CardBase from './card-database/images/card-base/card-base';
 import PrintMode from './print-mode/print-mode';
 import CARDS from './card-database/cards.db';
+import { useEffect } from 'react';
+import { useWindowResize } from './utils/hooks/windowResize.hook';
 
 export const AppContext = React.createContext();
 
@@ -13,17 +15,24 @@ const DEFAULT_CONTEXT = {
   view: 'database',
   isPopupOpen: false,
   popupCard: {set: '', cardNo: 0},
-  printList: [CARDS.BT1[88],CARDS.BT11[2]],
+  printList: [CARDS.BT1[2]],
   filters: {
-    sets: ['BT11'],
+    sets: ['BT1'],
     type: ['egg','dgmn','tamer','option'],
     color: ['red','blue','yellow','green','black','purple','white']
-  }
+  },
+  windowSize: 0
 }
 
 function App() {
 
   const [context,setContext] = useState(DEFAULT_CONTEXT);
+
+  const [windowSize] = useWindowResize();
+
+  useEffect(()=>{
+    setContext({...context,windowSize})
+  },[windowSize]);
 
   return (
     <AppContext.Provider value={[context,setContext]}>

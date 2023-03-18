@@ -65,9 +65,8 @@ svg .evo-cost{transform: translate(.6rem,4.45rem)}
 .tamer svg .main-info,
 .option svg .main-info{ transform: translate(.9rem,19.1rem)}
 
-.dgmn svg .main-info .rarity,
-.tamer svg .main-info .rarity,
-.option svg .main-info .rarity{ transform: translate(15.2rem, .2rem)}
+
+svg .main-info .rarity{ transform: translate(15.2rem, .2rem)}
 
 .dgmn svg .card-effect-block{ transform: translate(1rem,14.45rem) }
 .dgmn svg .card-effect-block.no-inherit{ transform: translate(1rem,16.9rem) }
