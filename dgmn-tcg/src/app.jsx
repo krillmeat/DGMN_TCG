@@ -12,12 +12,12 @@ import { useWindowResize } from './utils/hooks/windowResize.hook';
 export const AppContext = React.createContext();
 
 const DEFAULT_CONTEXT = {
-  view: 'database',
+  view: 'print',
   isPopupOpen: false,
   popupCard: {set: '', cardNo: 0},
-  printList: [CARDS.BT1[2]],
+  printList: [CARDS.P[33],CARDS.P[33],CARDS.P[33],CARDS.P[33],CARDS.P[16],CARDS.P[16],CARDS.P[16],CARDS.P[16]],
   filters: {
-    sets: ['BT1'],
+    sets: ['P'],
     type: ['egg','dgmn','tamer','option'],
     color: ['red','blue','yellow','green','black','purple','white']
   },

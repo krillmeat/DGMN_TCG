@@ -1,4 +1,5 @@
 import { BT1 } from "./db/BT1.db";
+import { P } from "./db/P.db";
 
 const CARDS = {
   ST1: [
@@ -291,22 +292,7 @@ const CARDS = {
     //   effect: ["<<When Digivolving>> You may play 1 blue Tamer card from your hand","without paying the cost.","<<Your Turn>> When you play a blue Tamer, unsuspend this Digimon.","<<Your Turn>> <<Once Per Turn>> When this Digimon becomes","unsuspended, return 1 of your opponent's level 3 or lower Digimon","to its owner's hand. For every blue Tamer you have in play, add 1 to","the max level of the Digimon you can choose with this effect."],
     //   inherit: []},
   ],
-  P: [
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},
-    { type: 'option', name:'Green Memory Boost!', no:38, set: 'P', rarity: 'SR',
-        colors: ['green'],
-        traits:[],
-        cost: 3,
-        effect: ["<<Main>> Reveal the top 4 cards of your deck. Add 1 green Digimon card","among them to your hand. Place the remaining cards at the bottom","of your deck in any order. Then, place this card in your battle area.","<<Main>> <<Delay>>","• Gain 2 memory."],
-        inherit: ["<<Security>> Place this card in its owner's battle area."],
-        special: ["condensed-inherit","super-condensed-card-effect"]
-    },{},{},
-    {},{},{},{},{},{},{},{},{},{},
-    {},{},{},{},{},{},{},{},{},{},
-  ]
+  P: P
 }
 
 export default CARDS;
