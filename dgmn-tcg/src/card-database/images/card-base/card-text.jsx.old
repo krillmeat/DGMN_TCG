@@ -20,7 +20,7 @@ const CardText = ({cardData}) => {
 
   const hasDP = useMemo(()=> cardData.type === 'dgmn' ,[cardData])
 
-  return (<div className='card-text'>
+  return (<div className={'card-text'+(cardData.special?.includes("full-art") ? " full-art" : "")}>
 
     <p className='card-type-label'>{TYPE_LABELS[cardData.type]}</p>
 

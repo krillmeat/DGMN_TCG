@@ -43,7 +43,7 @@ const FilterOption = ({optionName,iconType}) => {
   }
 
   return (<div className={'filter '+optionName}>
-    <p>{FILTERS[optionName].label}</p>
+    <p className='label'>{FILTERS[optionName].label}</p>
     <ul className={optionName}>
       {FILTERS[optionName].choices.map(value => {
         return <li key={value}>

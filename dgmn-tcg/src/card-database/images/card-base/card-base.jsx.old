@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useMemo, useRef} from 'react';
 import './card-base.css';
 import CARDS from '../../cards.db';
 import PlayCost from './components/play-cost';
@@ -11,6 +11,7 @@ import { EFFECT_BACK } from './svg.const';
 import InheritSVG from './svg-components/inherit.svg';
 import MainInfoSVG from './svg-components/main-info.svg';
 import CardBaseSVG from './svg-components/card-base.svg';
+import ContextMenu from '../../../context-menu';
 
 const CardBase = ({set,cardNo,size}) => {
   const card = CARDS[set][cardNo-1]; // Temporary
@@ -24,8 +25,15 @@ const CardBase = ({set,cardNo,size}) => {
   //   return ''
   // },[card])
 
-  return ( <div className={'card '+size+' '+card.type+' '+(card.colors.join(" "))+" "+(card.special && card.special.join(" "))}><div className='card-wrap'>
-    <CardBaseSVG cardData={card} />
+  const cardRef = useRef();
+
+  return ( <div 
+    data-card={set+'-'+formatCardNumber(set,cardNo)} 
+    className={'card '+size+' '+card.type+' '+(card.colors.join(" "))+" "+(card.special && card.special.join(" "))} 
+    ref={cardRef}>
+      <div className='card-wrap'>
+    <ContextMenu origin='card' cardNo={set+'-'+formatCardNumber(set,cardNo)} cardRef={cardRef}/>
+    <CardBaseSVG cardData={card}  />
 
     <div className='non-svg-wrap'>
       <CardText cardData={card} />

@@ -9,6 +9,7 @@
 
 .card-text .inherit.shifted-up{ top: 30em }
 .card-text .inherit.text-black{ color: #000 }
+.card-text .inherit.text-black .tag{ color: #FFF }
 
 .card-text .inherit .inherit-label{
   position: absolute;
@@ -66,7 +67,7 @@
 }
 
 .inherit-effect > p.line{
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'adelle-sans-condensed', sans-serif; 
   font-weight: 300;
   font-size: .76em;
   color: #FFF;

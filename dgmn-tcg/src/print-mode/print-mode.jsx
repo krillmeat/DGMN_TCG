@@ -1,6 +1,6 @@
 import React, {useContext, useMemo} from 'react';
 import { AppContext } from '../app';
-import Card from '../card-database/card';
+import Card from '../card/card';
 
 import './print-mode.css';
 

@@ -2,35 +2,23 @@ import React from 'react';
 import { useMemo } from 'react';
 import { useContext } from 'react';
 import { AppContext } from '../app';
-import Card from './card';
+import Card from '../card/card';
 import CARDS from './cards.db';
 import { typeFilter, colorFilter } from './filter/filter.utils';
+import useGetFilteredCards from './filter/filtered-cards.hook';
+
+const NOTHING_FOUND = "No cards were found. Try adjusting your filters to be less restrictive."
 
 const CardList = () => {
 
-  const [context,setContext] = useContext(AppContext);
+  const [context] = useContext(AppContext)
 
-  const mergedSets = useMemo(()=>{
-    let sets = context.filters.sets;
-    let merged = CARDS[sets[0]];
-    for(let i = 1; i < sets.length; i++){
-      merged = merged.concat(CARDS[sets[i]])
-    }
-    return merged;
-  },[context])
-
-  const shownCards = useMemo(()=>{
-    if(context.filters.sets.length === 0) return [];
-    let filtered = mergedSets; // Set
-        filtered = filtered.filter(typeFilter(context.filters.type)); // Type
-        filtered = filtered.filter(colorFilter(context.filters.color)); // Color
-        return filtered;
-  },[context])
+  const [shownCards] = useGetFilteredCards();
 
   return (<div className='card-list'>
     {shownCards.length > 0 ? shownCards.map((card,index) => {
-      return <Card key={card.set+index} set={card.set} card={card.no} size='xl' />
-    }) : <p>Nothing found</p>}
+      return <Card key={card.set+index} set={card.set} card={card.no} size={context.cardSize} />
+    }) : <p className='empty-database'>{NOTHING_FOUND}</p>}
   </div>)
 }
 

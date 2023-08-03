@@ -37,6 +37,8 @@
 
   .card-text .main-info .card-name.name-cnd-4{ letter-spacing: -.05em; font-size: 1.5em }
   .card-text .main-info .card-name.name-cnd-5{ letter-spacing: -.05em; transform: scaleX(.9) }
+  .card-text .main-info .card-name.name-cnd-6{ letter-spacing: -.06em; transform: scaleX(.8) }
+  .card-text .main-info .card-name.name-cnd-7{ letter-spacing: -.07em; transform: scaleX(.8) }
 
 .card-text .main-info .set-no{
   position: absolute;
@@ -51,6 +53,7 @@
 }
 
   .card-text .main-info .set-no.black{ color: #000 }
+  .card-text .main-info .set-no.sec-rarity{ right: 2.4em }
 
 .card-text .main-info .dgmn-lv{
   position: absolute;

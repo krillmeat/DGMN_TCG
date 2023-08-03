@@ -22,13 +22,14 @@ const CostsTXT = ({type,cost,evoCosts,level,colors,special}) => {
     if(cost > 9) allClasses.push('double-digit')
     if(colors[0] === 'yellow' || colors[1] === 'white') allClasses.push('black')
     if(colors[1] === 'yellow' || colors[1] === 'white') allClasses.push('black-2')
+    if(special?.includes("no-evo-cost")) allClasses.push("no-evo")
 
     return allClasses.join(" ");
   },[cost,colors]);
 
   return ( <div className={classBuilder}>
     {type !== 'egg' && <p className={'play-cost'}>{cost}</p> }
-    {isDgmn(type) && <div className="evo-costs">
+    {isDgmn(type) && !special?.includes("no-evo-cost") && <div className="evo-costs">
       <p className='first'>
         <span className='lv-req'>Lv.{getLv(0,level,special)}</span>
         <span className='evo-value'>{evoCosts[0]}</span>

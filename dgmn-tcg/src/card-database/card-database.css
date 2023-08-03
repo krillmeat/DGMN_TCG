@@ -1,8 +1,10 @@
 .card-database{ 
   width: 100%;
   padding: .8rem;
-    padding-top: calc(8.7rem + .8rem)
+    padding-top: calc(8.7rem + .8rem);
+  background: #1A1A1A;
 }
+
 .card-list{ 
   width: 100%; 
     min-width: 375px;
@@ -11,13 +13,16 @@
     flex-wrap: wrap;
 }
 
+.card-database.deck-mode .card-list{
+  padding-right: 40%;
+}
+
   @media (min-width: 800px){
     .card-list{ padding-left: 25rem }
   }
 
-.card-list > .card{
-  margin: 8px;
+p.empty-database{
+  font-family: 'adelle-sans-condensed', sans-serif;
+  font-size: 2em;
+  color: #AAA;
 }
-
-.card-wrapper{ width: 50%; padding: .2rem; }
-.card-wrapper img{ width: 100%; min-height: 200px }

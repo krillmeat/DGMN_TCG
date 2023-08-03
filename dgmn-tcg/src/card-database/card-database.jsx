@@ -8,7 +8,7 @@ import { AppContext } from '../app';
 
 const CardDatabase = () => {
   const [context,setContext] = useContext(AppContext);
-  return (<div className='card-database'>
+  return (<div className={'card-database '+ (context.isDeckBuilderActive ? 'deck-mode' : '')}>
     <CardFilter />
     <CardList set='ST1' />
     {context.isPopupOpen && <CardPopup />}

@@ -40,3 +40,16 @@
 .card-text .card-effect.xros-2 > p:nth-last-of-type(2){ font-size: .84em !important; letter-spacing: 0em !important }
   .card-text .card-effect.xros-2 > p:last-of-type,
   .card-text .card-effect.xros-2 > p:nth-last-of-type(-n+2) .tag{ font-size: .81em }
+
+  .card-text .card-effect.lead-sm-1 > p{ margin-bottom: .3em }
+.card-text .card-effect.lead-sm-2 > p{ margin-bottom: .25em }
+.card-text .card-effect.lead-sm-3 > p{ margin-bottom: .2em }
+.card-text .card-effect.lead-sm-4 > p{ margin-bottom: .15em }
+
+.card-text .card-effect.full-art{ 
+  color: #000; 
+  text-shadow: -.1rem -.1rem 0 #FFF, 0 -.1rem 0 #FFF, .1rem -.1rem 0 #FFF,
+               -.1rem 0 0 #FFF, .1rem 0 0 #FFF,
+               -.1rem .1rem 0 #FFF, 0 .1rem 0 #FFF, .1rem .1rem 0 #FFF;
+}
+  .card-text .card-effect.full-art > p .tag{ color: #FFF; text-shadow: none }

@@ -1,0 +1,243 @@
+.card-text{
+  position: absolute;
+    top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  MAIN INFO                                                              ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.card-text .main-info{
+  position: absolute;
+  left: 1.3em;
+  top: 27.7em;
+  width: calc(100% - 2.75em);
+  /* height: 50px; background: pink; */
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  CARD NAME                                                              ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.card-text .main-info .card-name{
+  position: absolute;
+    top: 0; left: 0;
+  width: 100%;
+
+  font-family: "adelle-sans-condensed", sans-serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #FFF;
+}
+
+  /* COLOR SPECIFICS */
+  .card.color-one-yellow.card.color-two-yellow .card-text .main-info .card-name{ color: #000 }
+  .card.color-one-yellow:not(.color-two-yellow) .card-text .main-info .card-name,
+  .card.color-two-yellow:not(.color-one-yellow) .card-text .main-info .card-name { 
+    text-shadow:
+      -1.25px -1.25px 0 #000,  
+       1.25px -1.25px 0 #000,
+      -1.25px 1.25px 0 #000,
+       1.25px 1.25px 0 #000;}
+
+  /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::  LEVEL                                                                  ::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+  .card-text .main-info .level{
+    position: absolute;
+      top: -.04em; left: .3em;
+    font-family: "Squada One", sans-serif;
+    font-size: 2em;
+    color: #FFF;
+    -webkit-text-stroke: .5px #000;
+    letter-spacing: -1px;
+  }
+
+    .card-text .main-info .level span.label{
+      font-size: .8em;
+    }
+
+  /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::  MINI INFO                                                              ::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  
+  .card-text .mini-info{
+    position: absolute;
+    top: 3.5em; right: 0em;
+    display: flex;
+    font-family: "adelle-sans-condensed",sans-serif;
+    font-size: .48em;
+    letter-spacing: .1em;
+
+    color: #FFF;
+  }
+
+  .card-text .mini-info > p{
+    padding: 0 2.1em;
+    border-left: 1px solid #FFF;
+  }
+
+    .card-text .mini-info > p:first-of-type{ border-left: none }
+    .card-text .mini-info > p:last-of-type{ padding-right: 1.5em }
+
+    .card.s .mini-info,
+    .card.xs .mini-info{ display: none }
+
+  /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::  SET INFO                                                               ::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+  .card-text .set-info{
+    position: absolute;
+      top: 0; right: .5em ;
+  }
+
+  .card-text .set-info .card-number{
+    font-family: "adelle-sans-condensed", sans-serif;
+    font-weight: 600;
+    font-size: .65em;
+    letter-spacing: .1em;
+    color: #FFF;
+  }
+
+    .card.color-two-yellow .card-text .set-info .card-number{
+      color: #000;
+    }
+
+  .card-text .set-info .set-icons{
+    position: absolute;
+      top: .5em; right: 0;
+    display: flex;
+  }
+
+  .card-text .set-info .rarity-icon{ height: 1.1em }
+    .card-text .set-info .rarity-icon path{ fill: #FFF }
+    .card.color-two-yellow .card-text .set-info .rarity-icon path{ fill: #000 }
+
+  .card-text .set-info .rotation-icon{
+    position: relative;
+    display: block;
+    width: 1.6em;
+    text-align: center;
+  }
+
+  .card-text .set-info .rotation-icon > svg{
+    position: absolute;
+    top: 0; right: 0;
+  }
+
+  .card-text .set-info .rotation-icon p{
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding-top: .45em;
+    font-size: .65em;
+    font-family: "adelle-sans-condensed", sans-serif;
+    font-weight: 600;
+  }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  DP                                                                     ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.dgmn-dp{
+  position: absolute;
+  top: .8em; right: 1.8em;
+  text-align: right;
+  color: #000;
+}
+
+.dgmn-dp .label{
+  position: absolute;
+  font-size: .9em;
+  top: 0; right: 0;
+}
+
+.dgmn-dp .value{
+  position: absolute;
+  top: -.15em; right: 0;
+  font-size: 2.9em;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-weight: 700;
+  -webkit-text-stroke: .5px #000;
+}
+
+.dgmn-dp .value > span{
+  font-size: .55em;
+  -webkit-text-stroke: 0;
+  margin-left: .05em;
+  text-shadow: none;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  COSTS                                                                  ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.card-text .cost{
+  position: absolute;
+  top: 1.55em; left: 2.55em;
+}
+
+.card-text .cost .play-cost{
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-size: 2.6em;
+  color: #FFF;
+}
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  EFFECT TEXT (MAIN & INHERIT/SECURITY)                                  ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.card-text .effect{
+  font-family: "adelle-sans-condensed", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.card-text .inherit{
+  position: absolute;
+    top: 30.6em; left: 5.5em;
+  width: calc(100% - 7.2em);
+  /* height: 100px; background: pink; */
+}
+
+.card-text .inherit .line{ 
+  font-size: .9em;
+  margin-bottom: .15em;
+  letter-spacing: .02em;
+}
+
+.card.color-one-yellow.card.color-two-yellow .card-text .inherit{ color: #000 }
+.card.color-one-yellow:not(.color-two-yellow) .card-text .inherit,
+.card.color-two-yellow:not(.color-one-yellow) .card-text .inherit{ text-shadow:
+  -1.25px -1.25px 0 #000,  
+   1.25px -1.25px 0 #000,
+  -1.25px 1.25px 0 #000,
+   1.25px 1.25px 0 #000 }
+
+.card-text .effect .tag{
+  font-size: .8em;
+  color: #FFF;
+  text-shadow: none;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 0 .4em;
+  letter-spacing: .05em;
+}
+
+.card-text .effect .tag.purple{ background-color: #AF1264 }
+.card-text .effect .tag.blue{ background-color: #317BBA }
+.card-text .effect .tag.orange{ background-color: orange }

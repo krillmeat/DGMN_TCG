@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import CardBase from '../images/card-base/card-base';
+import CardBase from '../images/card-base/card-base.jsx.old';
 import './card-popup.css';
 import { AppContext } from '../../app';
 

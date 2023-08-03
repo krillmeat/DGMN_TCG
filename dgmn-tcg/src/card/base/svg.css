@@ -1,0 +1,30 @@
+.fill-white{ fill: #FFF }
+.fill-color-one{ fill: #00FF00 }
+.fill-color-two{ fill: #00FFFF }
+
+/* COLORS */
+/* RED */
+.color-one-red .fill-color-one,
+.color-two-red .fill-color-two{ fill: #E7002C }
+
+/* YELLOW */
+.color-one-yellow .fill-color-one,
+.color-two-yellow .fill-color-two{ fill: #FFE100 }
+
+
+/* COST */
+.cost-dark-blue-fill{ fill:#031132 }
+.cost-mid-blue-fill{ fill: #133354 }
+.cost-gray-fill{ fill: #99a8b3 }
+.evo-cost-blue-fill{ fill: #274D70 }
+
+.cost-marker{ fill: #99A8B3 }
+
+.color-one-red .cost-marker-red,
+.color-two-red .cost-marker-red{ fill: #E7002C }
+
+.color-one-yellow .cost-marker-yellow,
+.color-two-yellow .cost-marker-yellow{ fill: #FFE100 }
+
+
+.effect > g:first-of-type{ opacity: .95 }

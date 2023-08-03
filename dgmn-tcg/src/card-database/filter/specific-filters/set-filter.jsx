@@ -28,16 +28,16 @@ const SetFilter = () => {
 
   return (<div className='set-filter'>
     <div className='top'>
-      <div className='left'><p>Sets</p>
+      <div className='left'><p className='label'>Sets</p>
       <ul className='active'>{context.filters.sets.map(set => {
-        return <li className='pill' onClick={()=>{removeSet(set)}}>{set}</li>
+        return <li className='pill' key={'set_'+set} onClick={()=>{removeSet(set)}}>{set}</li>
       })}</ul></div>
       <button className='expand' onClick={() => {setIsOpen(!isOpen)}}>+</button>
     </div>
     {isOpen && <ul className='inactive'>
       <li className='all pill' onClick={() => {}}>ADD ALL</li>
       {ALL_SETS.map(set => {
-        return <li className='pill' onClick={() => {addSet(set)}}>{set}</li>
+        return <li key={'set-pill_'+set} className='pill' onClick={() => {addSet(set)}}>{set}</li>
       })}
     </ul>}
   </div>)

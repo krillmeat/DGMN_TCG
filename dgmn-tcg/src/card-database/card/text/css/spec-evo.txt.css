@@ -1,19 +1,48 @@
-.card-text .spec-evo{
+.card-text .spec-evo,
+.card-text .dna-evo{
   position: absolute;
   left: 0;
-
-  top: -2.3em;
 }
 
-.card-text .spec-evo > p{
+  .card-text .spec-evo{ top: -2.3em }
+  .card-text .dna-evo{ top: -2.55em }
+
+.card-text .spec-evo > p,
+.card-text .dna-evo > p{
   display: inline-block;
-  padding: .2em .6em;
   background: #000;
   border-radius: 6px;
-  border: 1px solid #FFF;
-  color: #FFF;
   font-style: italic;
+  color: #FFF;
   font-size: .7em;
   font-weight: 700;
   letter-spacing: .15em;
 }
+
+.card-text .spec-evo > p{
+  padding: .4em .6em .2em .6em;
+  border: 1px solid #FFF;
+}
+
+.card-text .dna-evo > p{
+  padding: .6em 1em .4em 1em;
+  border: 1px solid #FFF;
+}
+
+.card-text .dna-evo > p > span{
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.card-text .dna-evo > p > span::before{
+  content:'';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0; top: -.1em;
+  width: 1.2em; height: 1.2em;
+  border-radius: 50%;
+  border: .01em solid #FFF;
+}
+
+.card-text .dna-evo > p > span.c-blue::before{ background: #0094DC }
+.card-text .dna-evo > p > span.c-green::before{ background: #009B68 }

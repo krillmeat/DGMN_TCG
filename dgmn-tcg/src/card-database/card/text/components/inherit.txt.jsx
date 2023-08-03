@@ -8,7 +8,7 @@ const InheritTXT = ({type,colors,inherit,special}) => {
     if(!inherit || !colors) return "";
     let allClasses = ["inherit"];
 
-    if(colors.indexOf("yellow") !== -1) allClasses.push("text-"+getTextColors("inherit",colors))
+    if(colors.includes("yellow") || colors.includes("white")) allClasses.push("text-"+getTextColors("inherit",colors))
     if(isTamerOrOption(type)) allClasses.push("security");
     if(isTamerOrOption(type) || type === 'egg') allClasses.push("shifted-up")
     if(!isTamerOrOption(type)) allClasses.push("ess")

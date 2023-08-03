@@ -43,9 +43,9 @@ export const tagify = line => {
 
 export const isTamerOrOption = cardType => cardType === 'tamer' || cardType === 'option';
 export const getTextColors = (origin,colors) => {
-  if(colors.length === 1 && (colors[0] === 'yellow' || colors.indexOf("white"))) return 'black'
+  if(colors.length === 1 && (colors[0] === 'yellow' || colors.includes("white"))) return 'black'
 
-  if(colors.length === 2 && (colors.indexOf("yellow") !== -1 || colors.indexOf("white"))){
+  if(colors.length === 2 && (colors.indexOf("yellow") !== -1 || colors.includes("white"))){
     if(origin === 'card-name') return 'black-and-white'
     if(origin === 'set-info' && (colors[1] === 'yellow' || colors[1] === 'white')) return 'black'
   }
@@ -79,4 +79,23 @@ export const getNameCondensedTextRule = special => {
   for(let s of special){
     if(s.indexOf("name-cnd") !== -1) return s
   } return ""
+}
+
+export const getLeadingTextRule = special => {
+  for(let s of special){
+    if(s.indexOf("lead-sm-") !== -1) return s
+  } return ""
+}
+
+export const removeLeadingZeros = cardNo => {
+  let s = cardNo;
+
+  let count = 0;
+
+  while(count < 5 && s.charAt(0) !== '0'){
+    count++;
+    s = s.substring(1);
+  }
+
+  return s;
 }

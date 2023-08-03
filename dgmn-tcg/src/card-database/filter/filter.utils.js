@@ -18,3 +18,7 @@ export const colorFilter = cardColors => card => {
     if(cardColors.indexOf(color) !== -1) return true;
   } return false;
 }
+
+export const nameFilter = cardName => card => {
+  return card?.name?.toLowerCase().indexOf(cardName?.toLowerCase()) !== -1
+}
