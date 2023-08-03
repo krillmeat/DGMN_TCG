@@ -8,6 +8,8 @@ import { removeSvgWrap } from '../base.utils';
 
 const CardBaseMainInfo = ({cardType,dgmnLevel}) => {
 
+  console.log("CARD TYPE ? ",cardType);
+
   const mainInfoComponent = useMemo(()=>{
     switch(cardType){
       case 'egg':

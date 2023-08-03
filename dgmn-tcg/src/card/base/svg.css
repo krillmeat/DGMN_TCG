@@ -3,13 +3,23 @@
 .fill-color-two{ fill: #00FFFF }
 
 /* COLORS */
-/* RED */
 .color-one-red .fill-color-one,
 .color-two-red .fill-color-two{ fill: #E7002C }
 
-/* YELLOW */
+.color-one-blue .fill-color-one,
+.color-two-blue .fill-color-two{ fill: #0094DC }
+
 .color-one-yellow .fill-color-one,
 .color-two-yellow .fill-color-two{ fill: #FFE100 }
+
+.color-one-green .fill-color-one,
+.color-two-green .fill-color-two{ fill: #009B6B }
+
+.color-one-black .fill-color-one,
+.color-two-black .fill-color-two{ fill: #000 }
+
+.color-one-purple .fill-color-one,
+.color-two-purple .fill-color-two{ fill: #6456A3 }
 
 
 /* COST */
@@ -23,8 +33,21 @@
 .color-one-red .cost-marker-red,
 .color-two-red .cost-marker-red{ fill: #E7002C }
 
+.color-one-blue .cost-marker-blue,
+.color-two-blue .cost-marker-blue{ fill: #0094DC }
+
 .color-one-yellow .cost-marker-yellow,
 .color-two-yellow .cost-marker-yellow{ fill: #FFE100 }
 
 
 .effect > g:first-of-type{ opacity: .95 }
+
+
+/*export const COLORS = {
+  red: "#E7002C",
+  blue: "#0094DC",
+  yellow: "#FFE100",
+  green: "#009B6B",
+  black: "#000",
+  purple: "#6456A3",
+  white*/

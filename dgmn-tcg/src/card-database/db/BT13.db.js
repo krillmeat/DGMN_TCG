@@ -50,5 +50,6 @@ export const BT13 = [
     form: 'Mega', attr: 'Vaccine', traits: ['Light Dragon'],
     dp: 15, cost: 15, evoCost: [5],
     effect: ["-"],
-    inherit: ["-"]}, // 20
+    inherit: ["-"],
+    modClasses: ["name-cnd-4"]}, // 20
 ]

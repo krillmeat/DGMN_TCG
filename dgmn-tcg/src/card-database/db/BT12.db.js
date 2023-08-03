@@ -5,7 +5,12 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 export const BT12 = [
-  {},{},{},{},{},{}, // 6
+  {},{},
+  { type:'egg', name:'Koromon', no:3, set:'BT12', rarity: 'U', block: '02',
+    level: 2, colors: ['yellow'],
+    form: 'In-Training', traits: ['Lesser'],
+    inherit: ["<<Your Turn>> <<Once Per Turn>> When one of your","yellow or red Tamers becomes suspended, 1 of","your opponent's Digimon gets -1000 DP for the","turn."]},
+  {},{},{}, // 6
   
 
   
@@ -59,15 +64,21 @@ export const BT12 = [
     
     {},{},
   
-  { type:'dgmn', name: 'Imperialdramon Fighter Mode', no:31, set:'BT12', rarity:'SR',
+  { type:'dgmn', name: 'Imperialdramon: Fighter Mode', no:31, set:'BT12', rarity:'SR',
     level: 6, colors: ['blue','green'],
     form: 'Mega', attr: 'Free', traits: ['Ancient Dragonkin'],
     dp: 13, cost: 13, evoCost: [5,5],
     effect: ["<<When Digivolving>> Suspend all of your opponent's Digimon with no digivolution","cards. Then, return 1 of your opponent's suspended Digimon to its owner's hand. By","returning 1 [Imperialdramon Dragon Mode] from this Digimon's digivolution cards","to its owner's hand, return all of your opponent's suspended Digimon to the"," bottom of their owner's deck instead.","<<All Turns>> This Digimon gets +1000 DP for each color in its digivolution cards.","While this Digimon has 2 or more colors in its digivolution cards, it gains","<<Security Attack +1>> and <<Blocker>>."],
     inherit: [],
-    special: ["spec-evo-2-[Imperialdramon Dragon Mode]","cnd-4","txt-sm-3","name-cnd-7","lead-sm-4","no-inherit"]},
+    modClasses: ['name-cnd-5']},
 
-    {},{},{},{},{},{},{},{},{},
+    {},{},
+    { type:'dgmn', name: 'Agumon', no:34, set:'BT12', rarity:'C',
+      level: 3, colors: ['yellow','red'],
+      form: 'Rookie', attr: 'Vaccine', traits: ['Dinosaur'],
+      dp: 2, cost: 3, evoCost: [1],
+      effect: [""],
+      inherit: ["<<Your Turn>> <<Once Per Turn>> When one of your","yellow or red Tamers becomes suspended, 1 of","your opponent's Digimon gets -2000 DP for the","turn."]},{},{},{},{},{},{},
   {},{},{},{},
 
   
@@ -119,7 +130,7 @@ export const BT12 = [
     dp: 2, cost: 4, evoCost: [0],
     effect: ["<<On Play>> <<When Digivolving>> By trashing 1 Option card from","your hand, you may return 1 Digimon card with [Evil],","[Wizard], or [Demon Lord] in its traits from your trash to your hand."],
     inherit: ["<<When Attacking>> <<Once Per Turn>> Trash the top 2","cards of your deck"],
-    special: ["spec-evo-0-[Impmon]","name-cnd-4"]},{},{},{},{},
+    modClasses: ['name-cnd-2']},{},{},{},{},
 
   { type:'dgmn', name: 'Wizardmon (X Antibody)', no:78, set:'BT12', rarity:'C',
     level: 4, colors: ['purple'],
@@ -127,7 +138,8 @@ export const BT12 = [
     dp: 6, cost: 6, evoCost: [2],
     effect: ["<<When Digivolving>> Trash the top 2 cards of your deck. If this","Digimon has [Wizardmon] or [X Antobody] in its","digivolution cards, this Digimon gains <<Blocker>> until the","end of your opponent's turn instead."],
     inherit: ["<<When Attacking>> <<Once Per Turn>> Trash the top 2","cards of your deck."],
-    special: ["spec-evo-0-[Wizardmon]","name-cnd-5"]},{},{},
+    modClasses: ['name-cnd-3']}
+    ,{},{},
   {},
   
   { type:'dgmn', name: 'Baalmon (X Antibody)', no:82, set:'BT12', rarity:'R',

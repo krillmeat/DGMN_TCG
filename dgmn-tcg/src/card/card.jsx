@@ -21,13 +21,15 @@ const Card = ({set,card,size}) => {
                       `color-one-${cardData.colors[0]} color-two-${cardData.colors[0]}` :
                       `color-one-${cardData.colors[0]} color-two-${cardData.colors[1]}`;
 
+  const typeClass = cardData.type === 'dgmn' ? cardData.type + '-' + cardData.level : cardData.type;
+
   const launchPopup = e => {
     setContext({...context, isPopupOpen: !context.isPopupOpen, popupCard: {set: set, cardNo: card-1}});
   }
 
   const cardRef = useRef();
 
-  return (<div className={"card "+colorClass+" "+size} ref={cardRef}>
+  return (<div className={"card "+colorClass+" "+typeClass+" "+size} ref={cardRef}>
     {/* <CardBase set={set} cardNo={card} size={size} /> */}
     <div className='art-wrap'><img className='card-art' src={`https://rossdanielconover.com/dgmn-card-database/${set}/${set}-${formatCardNumber(set,card)}.png`}/></div>
     <CardBase cardSet={set} cardNumber={card} />

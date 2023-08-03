@@ -18,6 +18,10 @@
   /* height: 50px; background: pink; */
 }
 
+  .egg .card-text .main-info{ top: 26.6em }
+  .dgmn-6 .card-text .main-info,
+  .dgmn-7 .card-text .main-info{ top: 31.6em }
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::  CARD NAME                                                              ::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -213,6 +217,8 @@
   width: calc(100% - 7.2em);
   /* height: 100px; background: pink; */
 }
+
+.egg .card-text .inherit{ top: 29.5em }
 
 .card-text .inherit .line{ 
   font-size: .9em;

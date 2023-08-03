@@ -30,7 +30,7 @@ const CardTextMainInfo = ({cardType, cardRotation, cardRarity, cardSet, cardNumb
 
     <div className="mini-info">
       <p className="form">{miniInfo.form}</p>
-      <p className="att">{miniInfo.attr}</p>
+      {dgmnLevel !== 2 && <p className="att">{miniInfo.attr}</p>}
       <p className="traits">{miniInfo.traits.join("/")}</p>
     </div>
 

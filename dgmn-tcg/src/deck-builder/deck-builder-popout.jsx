@@ -15,7 +15,7 @@ const DeckBuilderPopout = () => {
   const deck = useMemo(()=> context.currentDeck ,[context])
 
   return (<div className='deck-builder-popout'>
-    <button onClick={copyDeckListAsJS}>Copy Deck List</button>
+    <button className='copy-deck' onClick={copyDeckListAsJS}>Copy Deck List</button>
     <p className='deck-name'>{deck.deckName}</p>
     <DeckCardList cardList={deck.cardList} />
   </div>)

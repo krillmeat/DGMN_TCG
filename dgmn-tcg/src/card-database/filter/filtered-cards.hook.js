@@ -21,9 +21,9 @@ const useGetFilteredCards = () => {
   },[filters])
 
   useEffect(()=>{
-    if(Object.keys(filters).length === 0) return;
-    if(filters.sets.length === 0) return;
-    if(!mergedSets) return;
+    if(Object.keys(filters).length === 0) {setFilteredCards([]); return }
+    if(filters.sets.length === 0) {setFilteredCards([]); return }
+    if(!mergedSets) {setFilteredCards([]); return }
 
     let filtered = mergedSets;
         filtered = filtered.filter(typeFilter(filters.type));

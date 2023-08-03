@@ -16,7 +16,7 @@ const CardList = () => {
   const [shownCards] = useGetFilteredCards();
 
   return (<div className='card-list'>
-    {shownCards.length > 0 ? shownCards.map((card,index) => {
+    {shownCards && shownCards.length > 0 ? shownCards.map((card,index) => {
       return <Card key={card.set+index} set={card.set} card={card.no} size={context.cardSize} />
     }) : <p className='empty-database'>{NOTHING_FOUND}</p>}
   </div>)

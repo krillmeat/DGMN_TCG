@@ -10,7 +10,7 @@ const SetFilter = () => {
 
   const removeSet = set => {
     let currentSets = context.filters.sets;
-        currentSets.splice(currentSets.indexOf(set),1)
+        currentSets.splice(currentSets.indexOf(set),1);
     setContext({...context, filters: {
       ...context.filters,
       sets: currentSets
@@ -19,6 +19,7 @@ const SetFilter = () => {
 
   const addSet = set => {
     let currentSets = context.filters.sets;
+    if(currentSets.indexOf(set) !== -1) return
         currentSets.unshift(set);
     setContext({...context, filters: {
       ...context.filters,

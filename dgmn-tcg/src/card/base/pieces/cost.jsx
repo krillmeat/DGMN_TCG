@@ -3,10 +3,10 @@ import {ReactComponent as PlayCostDigimon} from '../pieces/svgs/SVG_Play-Cost_Di
 import {ReactComponent as EvoCostDigimon} from '../pieces/svgs/SVG_Evo_Digimon (3-5).svg';
 import { removeSvgWrap } from '../base.utils';
 
-const CardBaseCost = () => {
+const CardBaseCost = ({cardType}) => {
   return (<g className='cost'>
     <g>{removeSvgWrap(PlayCostDigimon)}</g>
-    <g>{removeSvgWrap(EvoCostDigimon)}</g>
+    {cardType === 'dgmn' && <g>{removeSvgWrap(EvoCostDigimon)}</g>}
   </g>)
 }
 

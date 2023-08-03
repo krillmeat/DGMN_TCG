@@ -16,10 +16,11 @@ const CardBase = ({cardSet,cardNumber}) => {
   return (<div className="card-base">
     <svg width="100%" height="100%" viewBox="0 0 180 252">
       <Frame cardType={cardData.type} dgmnLevel={dgmnLevel}/>
-      <Cost />
+      <Cost cardType={cardData.type} />
       <MainInfo cardType={cardData.type}  dgmnLevel={dgmnLevel} />
-      <Inherit/>
-      {cardData.effect.length > 0 && <CardBaseEffect />}
+      {(cardData.type === 'dgmn' || cardData.type === 'egg') && cardData.level < 6 && 
+        <Inherit cardType={cardData.type} />}
+      {cardData.effect && cardData.effect.length > 0 && <CardBaseEffect dgmnLevel={cardData.level}/>}
     </svg>
   </div>)
 }
