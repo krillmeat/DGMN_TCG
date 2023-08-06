@@ -198,6 +198,26 @@
   color: #FFF;
 }
 
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  SPECIAL EVOLUTION                                                      ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.card-text .spec-evo{
+  position: absolute;
+  top: 23em; left: 2.4em;
+  display: inline-block;
+  font-family: "adelle-sans-condensed", sans-serif;
+  font-style: italic;
+  background: #000;
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  color: #FFF;
+  padding: .2em .5em;
+  font-size: .8em;
+}
+
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
@@ -211,6 +231,12 @@
   color: #FFF;
 }
 
+.card-text .effect.main{
+  position: absolute;
+    top: 20.9em; left: 2.2em;
+  width: calc(100% - 4.1em);
+}
+
 .card-text .inherit{
   position: absolute;
     top: 30.6em; left: 5.5em;
@@ -220,11 +246,14 @@
 
 .egg .card-text .inherit{ top: 29.5em }
 
+.card-text .effect.main .line,
 .card-text .inherit .line{ 
   font-size: .9em;
-  margin-bottom: .15em;
   letter-spacing: .02em;
 }
+
+.card-text .effect.main .line{ margin-bottom: .3em }
+.card-text .inherit .line{ margin-bottom: .15em }
 
 .card.color-one-yellow.card.color-two-yellow .card-text .inherit{ color: #000 }
 .card.color-one-yellow:not(.color-two-yellow) .card-text .inherit,

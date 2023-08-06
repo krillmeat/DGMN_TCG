@@ -1,11 +1,13 @@
 import React from 'react';
 import MainInfo from './pieces/main-info.txt';
 import Inherit from './pieces/inherit.txt';
+import Effect from './pieces/effect.txt';
 import CARDS from '../../card-database/cards.db';
 import './card-text.css';
 import './mod-classes.css';
 import DP from './pieces/dp.txt';
 import Cost from './pieces/cost.txt';
+import SpecEvo from './pieces/spec-evo';
 
 const modClasses = modList => {
   return modList ? modList.join(' ') : "";
@@ -34,10 +36,13 @@ const CardText = ({cardSet,cardNumber}) => {
       dgmnLevel={cardData.level} 
       cardName={cardData.name} 
       miniInfo={miniInfo}
-      cardRotation={cardData.rotation} />
+      cardRotation={cardData?.rotation} />
+
+      {cardData.specEvo && <SpecEvo specEvo={cardData.specEvo}/>}
+      {cardData.effect && cardData.effect?.length !== 0 && <Effect effectLines={cardData.effect} /> }
 
 
-    <Inherit inheritLines={cardData.inherit} />
+    {cardData.inherit?.length > 0 && <Inherit inheritLines={cardData.inherit} />}
   </div>)
 }
 
