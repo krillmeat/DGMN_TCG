@@ -23,6 +23,7 @@ export const getTagColor = tagText =>{
     case "All Turns":
     case "End of Opponent's Turn":
     case "End of Your Turn":
+    case "Start of Your Main Phase":
       return 'blue';
     case 'Blocker':
     case 'Security Attack +1':
@@ -41,6 +42,7 @@ export const getTagColor = tagText =>{
     case 'Rush':
     case 'Jamming':
     case 'Piercing':
+    case "Recovery +1 ≪Deck≫":
       return 'orange';
     case 'Once Per Turn':
       return 'purple';

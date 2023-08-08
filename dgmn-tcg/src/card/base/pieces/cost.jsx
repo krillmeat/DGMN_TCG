@@ -3,10 +3,20 @@ import {ReactComponent as PlayCostDigimon} from '../pieces/svgs/SVG_Play-Cost_Di
 import {ReactComponent as EvoCostDigimon} from '../pieces/svgs/SVG_Evo_Digimon (3-5).svg';
 import { removeSvgWrap } from '../base.utils';
 
-const CardBaseCost = ({cardType}) => {
+const buildEvoColorClasses = evoColors => {
+  if(!evoColors) return '';
+  if(evoColors.length === 1) return 'evo-color-one-'+evoColors[0]
+
+  return 'evo-color-one-'+evoColors[0]+' evo-color-two-'+evoColors[1]
+}
+
+const CardBaseCost = ({cardType,evoColors}) => {
   return (<g className='cost'>
-    <g>{removeSvgWrap(PlayCostDigimon)}</g>
-    {cardType === 'dgmn' && <g>{removeSvgWrap(EvoCostDigimon)}</g>}
+    <g className='play'>{removeSvgWrap(PlayCostDigimon)}</g>
+    {cardType === 'dgmn' && 
+      <g className={'evo '+buildEvoColorClasses(evoColors)}>
+        {removeSvgWrap(EvoCostDigimon)}
+      </g>}
   </g>)
 }
 

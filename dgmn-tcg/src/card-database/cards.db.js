@@ -1,4 +1,5 @@
 import { BT1 } from "./db/BT1.db";
+import { BT2 } from "./db/BT2.db";
 import { BT11 } from "./db/BT11.db";
 import { BT12 } from "./db/BT12.db";
 import { BT13 } from "./db/BT13.db";
@@ -6,6 +7,7 @@ import { BT3 } from "./db/BT3.db"
 import { BT4 } from "./db/BT4.db";
 import { BT7 } from "./db/BT7.db";
 import { BT9 } from "./db/BT9.db";
+import { EX4 } from "./db/EX4.db";
 import { P } from "./db/P.db";
 import { ST14 } from "./db/ST14.db";
 
@@ -134,6 +136,7 @@ const CARDS = {
   ],
   ST14: ST14,
   BT1: BT1,
+  BT2: BT2,
   BT3: BT3,
   BT4: BT4,
   BT5: [
@@ -161,6 +164,7 @@ const CARDS = {
   BT11: BT11,
   BT12: BT12,
   BT13: BT13,
+  EX4: EX4,
   P: P
 }
 

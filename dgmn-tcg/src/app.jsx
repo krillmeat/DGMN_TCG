@@ -23,14 +23,14 @@ const DEFAULT_CONTEXT = {
   isDeckBuilderActive: true,
   currentDeck: DECK_LISTS.shineGrey,
   filters: {
-    sets: ['BT13'],
+    sets: ['BT2'],
     type: ['egg','dgmn','tamer','option'],
     color: ['red','blue','yellow','green','black','purple','white'],
     name: undefined
   },
   windowSize: 0,
   mousePosition: [0,0],
-  cardSize: 'xxxl'
+  cardSize: 'xl'
 }
 
 function App() {

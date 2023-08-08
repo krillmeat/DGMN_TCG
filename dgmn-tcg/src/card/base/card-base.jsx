@@ -16,7 +16,7 @@ const CardBase = ({cardSet,cardNumber}) => {
   return (<div className="card-base">
     <svg width="100%" height="100%" viewBox="0 0 180 252">
       <Frame cardType={cardData.type} dgmnLevel={dgmnLevel}/>
-      <Cost cardType={cardData.type} />
+      <Cost cardType={cardData.type} evoColors={cardData?.evoCost?.colors} />
       <MainInfo cardType={cardData.type}  dgmnLevel={dgmnLevel} />
       {(cardData.type === 'dgmn' || cardData.type === 'egg') && cardData.level < 6 && 
         <Inherit cardType={cardData.type} />}

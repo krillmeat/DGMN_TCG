@@ -14,7 +14,7 @@
       "{ type:'dgmn', name: '$1', no:$2, set:'$3', rarity:'$4',",
       "  level: $5, colors: ['$6'],",
       "  form: '$7', attr: '$8', traits: ['$9'],",
-      "  dp: $10, cost: $11, evoCost: [$12],",
+      "  dp: $10, cost: $11, evoCost: {$12},",
       "  effect: [\"$13\"],",
       "  inherit: [\"$14\"]},"
     ]

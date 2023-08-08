@@ -174,6 +174,9 @@
   -webkit-text-stroke: .5px #000;
 }
 
+.dgmn-dp.double-digit .value{ letter-spacing: -.05em; }
+.dgmn-dp.double-digit .value span{ letter-spacing: 0em; }
+
 .dgmn-dp .value > span{
   font-size: .55em;
   -webkit-text-stroke: 0;
@@ -193,10 +196,50 @@
 }
 
 .card-text .cost .play-cost{
+  position: absolute;
   font-family: 'nimbus-sans-condensed', sans-serif;
   font-size: 2.6em;
   color: #FFF;
 }
+
+.card-text .cost .play-cost.double-digit{ font-size: 2.5em; top:.07em; left: -.23em; letter-spacing: -.05em }
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  EVO COSTS                                                              ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.card-text .cost .evo-cost{
+  position: absolute; 
+    top: 3.2em; left: -.1em;
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  color: #FFF;
+}
+
+.card-text .cost .evo-cost .level{
+  position: absolute;
+    top: -.55em; left: -.2em;
+  display:block;
+  font-size: .45em;
+  font-family: "adelle-sans-condensed", sans-serif;
+  font-weight: 400;
+}
+
+  .card.s .card-text .cost .evo-cost{ top: 3em }
+  .card.s .card-text .cost .evo-cost .level{ display: none }
+
+  .card.color-one-yellow.color-two-yellow .card-text .cost .evo-cost{ color: #000 }
+
+.card.color-one-yellow:not(.color-two-yellow) .card-text .cost .evo-cost,
+  .card.color-two-yellow:not(.color-one-yellow) .card-text .cost .evo-cost{ 
+    color: #FFF;
+    text-shadow:
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
@@ -218,6 +261,20 @@
   font-size: .8em;
 }
 
+.dgmn-6 .card-text .spec-evo,
+.dgmn-7 .card-text .spec-evo{
+  top: 28em;
+}
+
+.card-text.burst-evo .spec-evo{
+  top: 29.8em; left: 2.5em;
+  width: calc(100% - 5em);
+  display: block;
+  font-size: .72em;
+  letter-spacing: -.03em;
+  line-height: 1.2
+}
+
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::::::::::::::::::::                                                                         ::::::::::::::::::::
@@ -236,6 +293,10 @@
     top: 20.9em; left: 2.2em;
   width: calc(100% - 4.1em);
 }
+
+  .dgmn-6 .card-text .effect.main{
+    top: 24.8em;
+  }
 
 .card-text .inherit{
   position: absolute;
@@ -275,4 +336,4 @@
 
 .card-text .effect .tag.purple{ background-color: #AF1264 }
 .card-text .effect .tag.blue{ background-color: #317BBA }
-.card-text .effect .tag.orange{ background-color: orange }
+.card-text .effect .tag.orange{ background-color: #D15E00 }

@@ -40,7 +40,7 @@ const ContextMenu = ({origin,cardNo,cardRef}) => {
       printList: currPrintList
     });
 
-    setIsOpen(false);
+    setOpenRef(false);
   }
 
   const addToDeck = () => {
@@ -74,7 +74,7 @@ const ContextMenu = ({origin,cardNo,cardRef}) => {
         }})
     }
 
-    setIsOpen(false);
+    setOpenRef(false);
   }
 
   useEffect(()=>{

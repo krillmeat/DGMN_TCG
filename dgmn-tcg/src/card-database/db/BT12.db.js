@@ -29,10 +29,10 @@ export const BT12 = [
   { type:'dgmn', name: 'Veemon', no:21, set:'BT12', rarity:'C',
     level: 3, colors: ['blue'],
     form: 'Rookie', attr: 'Free', traits: ['Mini Dragon'],
-    dp: 1, cost: 3, evoCost: [0,0],
+    dp: 1, cost: 3, evoCost: {value: 0, colors: ['blue','green']},
     effect: ["<<On Play>> Reveal the top 3 cards of your deck. Add 1","Digimon card with [Imperialdramon] in its name or","[Free] in its traits and 1 Tamer card with [Davis","Motomiya] in its name from among them to your hand.","Place the rest at the bottom of the deck in any order."],
     inherit: ["<<End of Your Turn>> You may DNA digivolve this","Digimon and one of your other Digimon in play","into a Digimon card in your hand by paying its","DNA digivolve cost."],
-    special: ["evo-color-diff-blue-green"]},
+    modClasses: ["effect-five-line"]},
   
 
   { type:'dgmn', name: 'ExVeemon', no:22, set:'BT12', rarity:'U',
@@ -72,14 +72,48 @@ export const BT12 = [
     inherit: [],
     modClasses: ['name-cnd-5']},
 
-    {},{},
+    {},
+    
+    
+  /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  ::::::::::::::::::::  YELLOW                                                                 ::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+    {},
     { type:'dgmn', name: 'Agumon', no:34, set:'BT12', rarity:'C',
       level: 3, colors: ['yellow','red'],
       form: 'Rookie', attr: 'Vaccine', traits: ['Dinosaur'],
-      dp: 2, cost: 3, evoCost: [1],
+      dp: 2, cost: 3, evoCost: {value:1, colors: ['red','yellow']},
       effect: [""],
-      inherit: ["<<Your Turn>> <<Once Per Turn>> When one of your","yellow or red Tamers becomes suspended, 1 of","your opponent's Digimon gets -2000 DP for the","turn."]},{},{},{},{},{},{},
-  {},{},{},{},
+      inherit: ["<<Your Turn>> <<Once Per Turn>> When one of your","yellow or red Tamers becomes suspended, 1 of","your opponent's Digimon gets -2000 DP for the","turn."]},{},{},{},
+      
+      
+      { type:'dgmn', name: 'GeoGreymon', no:38, set:'BT12', rarity:'C',
+        level: 4, colors: ['yellow','red'],
+        form: 'Champion', attr: 'Vaccine', traits: ['Dinosaur'],
+        dp: 5, cost: 5, evoCost: {value:3, colors: ['red','yellow']},
+        effect: ["<<When Digivolving>> If you don't have [Marcus Damon] in","play, you may play 1 [Marcus Damon] from your hand","without paying the cost."],
+        inherit: ["<<Your Turn>> <<Once Per Turn>> When one of your","yellow or red Tamers becomes suspended, 1 of","your opponent's Digimon gets -2000 DP for the","turn."]},
+      {},{},
+  {},
+  { type:'dgmn', name: 'RizeGreymon', no:42, set:'BT12', rarity:'R',
+    level: 5, colors: ['yellow','red'],
+    form: 'Ultimate', attr: 'Vaccine', traits: ['Cyborg'],
+    dp: 7, cost: 7, evoCost: {value:4, colors: ['red','yellow']},
+    effect: ["<<When Digivolving>> If you have a yellow or red Tamer in","play, gain 1 memory."],
+    inherit: ["<<All Turns>> <<Once Per Turn>> When one of your","Tamers is deleted, place 1 [Marcus Damon]","from your trash on top of your security stack","face down."],
+    specEvo:"Digivolve: 3 from [GeoGreymon]"},
+    
+    
+    { type:'dgmn', name: 'ShineGreymon', no:43, set:'BT12', rarity:'SR',
+      level: 6, colors: ['yellow','red'],
+      form: 'Mega', attr: 'Vaccine', traits: ['Light Dragon'],
+      dp: 12, cost: 12, evoCost: {value:4, colors: ['red','yellow']},
+      effect: ["<<When Digivolving>> For each yellow and/or red Tamer you have in","play, 1 of your opponent's Digimon and all of your opponent's","Security Digimon get -3000 DP for the turn.","<<Your Turn>> All of your [Marcus Damon]s in play get +3000 DP and","gain <<Security Attack +1>>."],
+      inherit: [""],
+      specEvo:"Digivolve: 3 from Lv.5 w/[RizeGreymon] in name",
+      modClasses: ["effect-cnd-1","effect-sm-1"]
+    },{},
 
   
 

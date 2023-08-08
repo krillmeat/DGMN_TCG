@@ -134,7 +134,7 @@ export const BT1 = [
     level: 6, colors: ['red'],
     form: 'Mega', attr: 'Vaccine', traits: ['Dragonkin'],
     dp: 11, cost: 12, evoCost: [3],
-    effect: ["<<When Digivolving>> This Digimon gains <<Security Attack +1>>","for the turn.","<<Your Turn>> This Digimon doesn't activate <<Security>> skills on","Option cards it checks."],
+    effect: ["<<When Digivolving>> This Digimon gains <<Security Attack +1>>","for the turn.","<<Your Turn>> This Digimon doesn't activate <<Security>> skills","on Option cards it checks."],
     inherit: [],
     special: ["no-inherit"]},
   { type:'dgmn', name: 'Breakdramon', no:26, set:'BT1', rarity:'U',

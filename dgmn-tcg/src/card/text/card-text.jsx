@@ -24,9 +24,9 @@ const CardText = ({cardSet,cardNumber}) => {
   }
   return (<div className={'card-text '+modClasses(cardData.modClasses)}>
 
-    <DP dgmnDP={cardData.dp} />
+    {cardData.type === 'dgmn' && <DP dgmnDP={cardData.dp} />}
 
-    <Cost playCost={cardData.cost}/>
+    <Cost cardType={cardData.type} playCost={cardData.cost} evoCosts={cardData.evoCost} dgmnLevel={cardData.level}/>
 
     <MainInfo 
       cardType={cardData.type} 
