@@ -10,7 +10,8 @@
 
 .card-text.effect-cnd-1 .effect.main .line{ letter-spacing: 0em }
 
-.card-text.effect-sm-1 .effect.main{ top: 24.7em }
+.dgmn-6 .card-text.effect-sm-1 .effect.main,
+.dgmn-7 .card-text.effect-sm-1 .effect.main{ top: 24.7em }
 .card-text.effect-sm-1 .effect.main .line{ font-size: .8em; }
 
 /* INHERIT */
