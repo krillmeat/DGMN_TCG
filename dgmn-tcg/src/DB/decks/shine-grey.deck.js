@@ -5,11 +5,11 @@ export const SHINE_GREY_DECK = {
 			copies: 2,
 			need: 0,
 		},
-    EX4_074: {
+		EX4_074: {
 			copies: 1,
 			need: 0,
 		},
-    BT12_043: {
+		BT12_043: {
 			copies: 3,
 			need: 0,
 		},
@@ -17,13 +17,17 @@ export const SHINE_GREY_DECK = {
 			copies: 1,
 			need: 0,
 		},
-    BT2_041: {
+		BT2_041: {
 			copies: 1,
 			need: 0,
 		},
-    BT13_015: {
+		BT13_015: {
 			copies: 4,
 			need: 0,
+		},
+		BT9_041: {
+			copies: 2,
+			need: 0
 		},
 		BT13_012: {
 			copies: 4,
@@ -49,11 +53,23 @@ export const SHINE_GREY_DECK = {
 			copies: 2,
 			need: 0,
 		},
-    BT13_008: {
+		BT13_008: {
 			copies: 4,
 			need: 1,
 		},
-    BT12_003: {
+		BT13_095: {
+			copies: 4,
+			need: 0,
+		},
+		BT12_92: {
+			copies: 4,
+			need: 0
+		},
+		BT1_87: {
+			copies: 2,
+			need: 0
+		},
+		BT12_003: {
 			copies: 4,
 			need: 0,
 		},

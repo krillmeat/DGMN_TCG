@@ -9,9 +9,12 @@
 .card-text.effect-six-line .effect.main .line{ margin-bottom: 0em }
 
 .card-text.effect-cnd-1 .effect.main .line{ letter-spacing: 0em }
+.card-text.effect-cnd-2 .effect.main .line{ letter-spacing: -0.01em }
 
 .card-text.effect-sm-1 .effect.main{ top: 24.7em }
-.card-text.effect-sm-1 .effect.main .line{ font-size: .8em; }
+.card-text.effect-sm-1 .effect.main .line{ font-size: .9em; }
+.card-text.effect-sm-2 .effect.main{ top: 24.7em }
+.card-text.effect-sm-2 .effect.main .line{ font-size: .8em; }
 
 /* INHERIT */
 .card-text.inherit-cnd-1 .inherit .line{ letter-spacing: -.02em }

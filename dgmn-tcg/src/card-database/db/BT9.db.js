@@ -3,7 +3,16 @@ export const BT9 = [
   {},{},{},{},{},{},{},{},{},{},
   {},{},{},{},{},{},{},{},{},{},
   {},{},{},{},{},{},{},{},{},{},
-  {},{},{},{},{},{},{},{},{},{}, // 50
+  { type:'dgmn', name: 'RizeGreymon (X Antibody)', no:41, set:'BT9', rarity:'R',
+    level: 5, colors: ['yellow','red'],
+    form: 'Ultimate', attr: 'Vaccine', traits: ['Cyborg','X Antibody'],
+    dp: 8, cost: 8, evoCost: {value: 4, colors: ['yellow','red']},
+    effect: ["<<When Digivolving>> You may play 1 yellow or red Tamer card from your","hand without paying its memory cost. Then, if [RizeGreymon] or ","[X Antibody] is in this Digimon's digivolution cards, 1 of your opponent's","Digimon gets -2000 DP for the turn for each yellow or red Tamer you have in","play.","<<Your Turn>> For each Tamer you have in play, this Digimon gets +1000 DP."],
+    inherit: ["-"],
+    specEvo: "Digivolve: 1 from [RizeGreymon]",
+    modClasses: ['name-cnd-1','effect-sm-1','effect-cnd-1','effect-six-lines']
+  },
+  {},{},{},{},{},{},{},{},{}, // 50
   {},{},{},{},{},{},{},{},{},{},
   {},{},{},{},{},{},{},{},{},{},
   {},{},{},{},{},{},{},{},{},{},

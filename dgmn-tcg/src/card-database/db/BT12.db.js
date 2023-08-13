@@ -112,7 +112,7 @@ export const BT12 = [
       effect: ["<<When Digivolving>> For each yellow and/or red Tamer you have in","play, 1 of your opponent's Digimon and all of your opponent's","Security Digimon get -3000 DP for the turn.","<<Your Turn>> All of your [Marcus Damon]s in play get +3000 DP and","gain <<Security Attack +1>>."],
       inherit: [""],
       specEvo:"Digivolve: 3 from Lv.5 w/[RizeGreymon] in name",
-      modClasses: ["effect-cnd-1","effect-sm-1"]
+      modClasses: ["effect-cnd-1","effect-sm-2"]
     },{},
 
   
@@ -190,8 +190,16 @@ export const BT12 = [
     dp: 12, cost: 13, evoCost: [4],
     effect: ["<<When Digivolving>> If this Digimon has [Beelzemon] or","[X Antibody] in its digivolution cards, for every 10 cards in","your trash, trash the top card of your opponent's security stack.","<<On Deletion>> You may play 1 Digimon card with [Impmon] in its","name from your trash without paying its memory cost"],
     inherit: [],
-    special: ["cnd-3","name-cnd-5","spec-evo-1-[Beelzemon]"]},{},{},{},{},{},
-  {},{},{},{},{},{},{},{},{},{}, // 100
+    special: ["cnd-3","name-cnd-5","spec-evo-1-[Beelzemon]"]},{},{},{},{},{}, // 90
+  {},
+  { type:'tamer', name: 'Marcus Damon', no:92, set:'BT12', rarity:'R',
+    colors: ['yellow','red'],
+    traits: [],
+    cost: 4,
+    effect: ["<<Start of Your Main Phase>> If you have a Digimon with [Agumon]","or [Greymon] in its name in play, by paying 1 memory, for the turn,","this Tamer is also treated as a 3000 DP Digimon that can't digivolve","<<Your Turn>> When this Tamer becomes suspended, 1 of your Digimon","may digivolve into a yellow card with [Greymon] in its name in your","hand without paying the cost."],
+    inherit: ["<<Security>> Play this card without paying the cost."],
+    modClasses: ['effect-cnd-2','effect-sm-1','effect-six-lines']},
+  {},{},{},{},{},{},{},{}, // 100
   {},{},{},{},{},{},{},{},{},{},
   {},{}
 ]

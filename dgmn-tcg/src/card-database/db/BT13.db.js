@@ -47,7 +47,7 @@ export const BT13 = [
     dp: 12, cost: 12, evoCost: {value:4, colors: ['red','yellow']},
     effect: ["<<Start of Your Main Phase>> <<When Digivolving>> Until the end of","your opponent's turn, 1 of your [Marcus Damon]s is also treated as a ","3000 DP Digimon, can't digivolve, and gains <<Blocker>>.","<<All Turns>> <<Once Per Turn>> When one of your red or yellow","Tamers becomes suspended, 1 of your opponent's Digimon gets","-6000 DP for the turn."],
     inherit: [""],
-    modClasses: ["effect-six-line", "effect-cnd-1","effect-sm-1"],
+    modClasses: ["effect-six-line", "effect-cnd-1","effect-sm-2"],
     specEvo: "Digivolve: 3 from Lv.5 w/[RizeGreymon] in name"},
   {}, // 19
   { type:'dgmn', name: 'ShineGreymon: Burst Mode', no:20, set:'BT13', rarity:'SR', rotation:'02',
@@ -56,6 +56,22 @@ export const BT13 = [
     dp: 15, cost: 15, evoCost: {value:5, colors: ['red','yellow']},
     effect: ["<<When Digivolving>> You may play 1 [Marcus Damon] from your","hand without paying the cost. For the turn, the Tamer played by this","effect is also treated as a 12000 DP Digimon, can't digivolve, and","gains <<Rush>>.","<<Your Turn>> <<Once Per Turn>> When one of your Tamers becomes","suspended, trash the top card of your opponent's security stack."],
     inherit: [""],
-    modClasses: ["name-cnd-4", "effect-six-line", "effect-cnd-1","effect-sm-1", "burst-evo"],
+    modClasses: ["name-cnd-4", "effect-six-line", "effect-cnd-1","effect-sm-2", "burst-evo"],
     specEvo: "Burst Digivolve: 0 from [ShineGreymon] by returning 1 [Marcus Damon] to hand\n At the end of the burst digivolution turn, trash this Digimon's top card"}, // 20
+    {},{},{},{},{},{},{},{},{},{}, // 30
+    {},{},{},{},{},{},{},{},{},{}, // 40
+    {},{},{},{},{},{},{},{},{},{}, // 50
+    {},{},{},{},{},{},{},{},{},{}, // 60
+    {},{},{},{},{},{},{},{},{},{}, // 70
+    {},{},{},{},{},{},{},{},{},{}, // 80
+    {},{},{},{},{},{},{},{},{},{}, // 90
+    {},{},{},{},
+    { type:'tamer', name: 'Marcus Damon', no:95, set:'BT13', rarity:'R',
+      colors: ['red','yellow'],
+      traits: [],
+      cost: 5,
+      effect: ["<<Start of Your Turn>> If you have 2 or fewer memory, set it to 3.","<<On Play>> You may suspend this Tamer.","<<All Turns>> When this Tamer becomes suspended, 1 of your","opponent's Digimon get -3000 DP for the turn. Then, if you","have a Digimon with [Agumon] or [Greymon] in its name, gain","1 memory."],
+      inherit: ["<<Security>> Play this card without paying the cost."],
+      modClasses: ['effect-cnd-2','effect-sm-1','effect-six-lines']
+    },
 ]
