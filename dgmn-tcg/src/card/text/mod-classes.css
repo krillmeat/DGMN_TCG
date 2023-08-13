@@ -9,6 +9,7 @@
 .card-text.effect-six-line .effect.main .line{ margin-bottom: 0em }
 
 .card-text.effect-cnd-1 .effect.main .line{ letter-spacing: 0em }
+.card-text.effect-cnd-2 .effect.main .line{ letter-spacing: -0.01em }
 
 .dgmn-6 .card-text.effect-sm-1 .effect.main,
 .dgmn-7 .card-text.effect-sm-1 .effect.main{ top: 24.7em }

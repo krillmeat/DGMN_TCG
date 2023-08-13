@@ -84,5 +84,5 @@ export const EX4 = [
     effect: ["<<When Digivolving>> <<On Deletion>> Until the end of your opponent's","next turn, all of your opponent's Digimon get -5000 DP.","<<End of Attack>> Delete this Digimon and 1 of your opponent's","Digimon and <<Recovery +1 ≪Deck≫>>. Then, if you have a ","Tamer in play, hatch 1 Digi-Egg card to an empty space in","your breeding area."],
     inherit: [""],
     specEvo: "Digivolve: 4 from [ShineGreymon]",
-    modClasses: ["name-cnd-4","effect-cnd-1","effect-sm-1","effect-six-line"]},
+    modClasses: ["name-cnd-4","effect-cnd-1","effect-sm-2","effect-six-line"]},
 ]

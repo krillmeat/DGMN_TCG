@@ -20,7 +20,7 @@ const CardBase = ({cardSet,cardNumber}) => {
       <MainInfo cardType={cardData.type}  dgmnLevel={dgmnLevel} />
       {(cardData.type === 'dgmn' || cardData.type === 'egg') && cardData.level < 6 && 
         <Inherit cardType={cardData.type} />}
-      {cardData.effect && cardData.effect.length > 0 && <CardBaseEffect dgmnLevel={cardData.level}/>}
+      {cardData.effect && cardData.effect.length > 0 && <CardBaseEffect cardType={cardData.type} dgmnLevel={cardData.level}/>}
     </svg>
   </div>)
 }

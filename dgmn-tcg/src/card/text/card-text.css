@@ -18,7 +18,8 @@
   /* height: 50px; background: pink; */
 }
 
-  .egg .card-text .main-info{ top: 26.6em }
+  .egg .card-text .main-info,
+  .tamer .card-text .main-info{ top: 26.6em }
   .dgmn-6 .card-text .main-info,
   .dgmn-7 .card-text .main-info{ top: 31.6em }
 
@@ -110,9 +111,7 @@
     color: #FFF;
   }
 
-    .card.color-two-yellow .card-text .set-info .card-number{
-      color: #000;
-    }
+    .card.color-two-yellow .card-text .set-info .card-number{ color: #000 }
 
   .card-text .set-info .set-icons{
     position: absolute;

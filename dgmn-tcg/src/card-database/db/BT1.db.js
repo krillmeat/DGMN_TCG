@@ -144,25 +144,31 @@ export const BT1 = [
     effect: ["<<Piercing>>"],
     inherit: [],
     special: ["no-inherit"]},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},{},{},
-  // {},{},{},{},{},{},{},{},
-  // {
-  //   type:'tamer', name:'Mimi Tachikawa', no: 89, set: 'BT1', rarity: 'R',
-  //   colors: ['green'],
-  //   traits: [],
-  //   cost: 4,
-  //   effect:["<<Start of Your Turn>> If you have 2 or less memory, set your","memory to 3.","<<Main>> If you have a level 5 or higher green Digimon in play, you","can suspend this Tamer to hatch 1 Digi-Egg card to an empty","space in your breeding area, or move 1 level 3 or higher Digimon","from your breeding area to your battle area."],
-  //   inherit: ["<<Security>> Play this card without paying its","memory cost."],
-  //   special: ['condensed-card-effect']
-  // },{}, // 90
-  // {},{},{},{},{},{},{},{},{},{}, // 100
-  // {},{},{},{},{},{},{},{},{},{}, // 110
-  // {},{} // 112
+  {},{},{},{}, // 30
+  {},{},{},{},{},{},{},{},{},{}, // 40
+  {},{},{},{},{},{},{},{},{},{}, // 50
+  {},{},{},{},{},{},{},{},{},{}, // 60
+  {},{},{},{},{},{},{},{},{},{}, // 70
+  {},{},{},{},{},{},{},{},{},{}, // 80
+  {},{},{},{},{},{},
+  
+  { type:'tamer', name: 'T.K. Takaishi', no:87, set:'BT1', rarity:'R',
+    colors: ['yellow'],
+    traits: [],
+    cost: 4,
+    effect: ["<<Start of Your Turn>> If you have 2 or less memory, set your","memory to 3.","<<On Play>> Look at your security stack, then reveal 1 card in it and","add it to your hand. If that card is yellow, trigger","<<Recovery +1 ≪Deck≫>>."],
+    inherit: ["<<Security>> Play this card without paying the cost."]},
+  {},
+  {
+    type:'tamer', name:'Mimi Tachikawa', no: 89, set: 'BT1', rarity: 'R',
+    colors: ['green'],
+    traits: [],
+    cost: 4,
+    effect:["<<Start of Your Turn>> If you have 2 or less memory, set your","memory to 3.","<<Main>> If you have a level 5 or higher green Digimon in play, you","can suspend this Tamer to hatch 1 Digi-Egg card to an empty","space in your breeding area, or move 1 level 3 or higher Digimon","from your breeding area to your battle area."],
+    inherit: ["<<Security>> Play this card without paying its","memory cost."],
+    special: ['condensed-card-effect']
+  },{}, // 90
+  {},{},{},{},{},{},{},{},{},{}, // 100
+  {},{},{},{},{},{},{},{},{},{}, // 110
+  {},{} // 112
 ]
