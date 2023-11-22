@@ -35,6 +35,24 @@
   .deck-card-list::-webkit-scrollbar{ width: .6rem }
   .deck-card-list::-webkit-scrollbar-thumb{ width: 100%; background: #FFF }
 
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  DECK LIST MENU                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.deck-builder-popout .deck-list-menu{
+  position: absolute;
+  top: 2.5rem; left: 2.5rem;
+  width: 100%;
+}
+
+  .deck-list-menu ul{
+    display: flex;
+  }
+
+  .deck-list-menu ul li{
+    margin-right: .8rem;
+  }
+
 .deck-builder-popout button.copy-deck{
   position: absolute;
   top: 2.5rem; right: 2.5rem;

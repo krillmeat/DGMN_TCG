@@ -8,9 +8,10 @@ const MainNav = () => {
   const [context,setContext] = useContext(AppContext);
 
   const toggleDeckBuilderMode = () => {
-    !context.isDeckBuilderActive && setContext({
+    let isActive = context.isDeckBuilderActive;
+    setContext({
       ...context,
-      isDeckBuilderActive: true
+      isDeckBuilderActive: !isActive
     })
   }
 

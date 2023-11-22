@@ -20,8 +20,8 @@ nav.main{
 }
 
 nav.main button.hamb{
-  width: 2rem;
-  padding: .1rem 0;
+  width: 4rem;
+  padding: .75rem;
   display: flex;
     flex-direction: column;
     justify-content: space-between;

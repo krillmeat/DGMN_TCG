@@ -157,7 +157,8 @@ export const BT1 = [
     traits: [],
     cost: 4,
     effect: ["<<Start of Your Turn>> If you have 2 or less memory, set your","memory to 3.","<<On Play>> Look at your security stack, then reveal 1 card in it and","add it to your hand. If that card is yellow, trigger","<<Recovery +1 ≪Deck≫>>."],
-    inherit: ["<<Security>> Play this card without paying the cost."]},
+    inherit: ["<<Security>> Play this card without paying the cost."],
+    modClasses:['effect-sm-1']},
   {},
   {
     type:'tamer', name:'Mimi Tachikawa', no: 89, set: 'BT1', rarity: 'R',

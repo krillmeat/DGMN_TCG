@@ -6,6 +6,7 @@ import CARDS from './card-database/cards.db';
 import { removeLeadingZeros } from './card-database/card.util';
 import { findCardInDeck, getCurrCount, removeZeroes } from './deck-builder/utils/deck-builder.utils';
 import { buildFullSetNumber } from './card/card.utils';
+import { getTotalNeeded, getTotalOwned } from './utils/needed.util';
 
 const ContextMenu = ({origin,cardNo,cardRef}) => {
 
@@ -94,6 +95,8 @@ const ContextMenu = ({origin,cardNo,cardRef}) => {
       <ul style={{top: mousePosition[1]+'px',left: mousePosition[0]+'px'}}>
         <li><button onClick={addToProxies}>Add to Proxies</button></li>
         <li><button onClick={addToDeck}>Add to Current Deck</button></li>
+        <li>Needed: {getTotalNeeded(cardNo)}</li>
+        <li>Owned: {getTotalOwned(cardNo)}</li>
       </ul>
   </div> : <></>)
 }

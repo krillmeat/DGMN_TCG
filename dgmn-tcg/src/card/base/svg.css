@@ -64,6 +64,13 @@
 
 .effect > g:first-of-type{ opacity: .95 }
 
+.option-frame-color{ fill: #00496A }
+.option-effect-background{ fill: #EFEFEF }
+
+/* TAMER OPTION MAIN INFO BAR */
+.card.tamer .card-base > svg .main-info > g:last-of-type,
+.card.option .card-base > svg .main-info > g:last-of-type{ display: none }
+
 
 /*export const COLORS = {
   red: "#E7002C",

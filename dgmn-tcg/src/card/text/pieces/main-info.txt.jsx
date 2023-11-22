@@ -34,7 +34,7 @@ const CardTextMainInfo = ({cardType, cardRotation, cardRarity, cardSet, cardNumb
   const builtSetString = cardSet+"-"+formatCardNumber(cardSet,cardNumber);
 
   return (<div className='main-info'>
-    <p className="level"><span className='label'>Lv.</span>{dgmnLevel}</p>
+    {(cardType === 'dgmn' || cardType === 'egg') && <p className="level"><span className='label'>Lv.</span>{dgmnLevel}</p>}
     
     <p className="card-name">{cardName}</p>
    

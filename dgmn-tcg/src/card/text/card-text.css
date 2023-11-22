@@ -18,8 +18,9 @@
   /* height: 50px; background: pink; */
 }
 
-  .egg .card-text .main-info,
-  .tamer .card-text .main-info{ top: 26.6em }
+  .egg .card-text .main-info{ top: 26.6em }
+  .tamer .card-text .main-info,
+  .option .card-text .main-info{ top: 26.75em }
   .dgmn-6 .card-text .main-info,
   .dgmn-7 .card-text .main-info{ top: 31.6em }
 
@@ -287,14 +288,22 @@
   color: #FFF;
 }
 
+.card.option .card-text .effect.main{ color: #000 }
+
 .card-text .effect.main{
   position: absolute;
     top: 20.9em; left: 2.2em;
   width: calc(100% - 4.1em);
 }
 
-  .dgmn-6 .card-text .effect.main{
+  .dgmn-6 .card-text .effect.main,
+  .dgmn-7 .card-text .effect.main{
     top: 24.8em;
+  }
+
+  .tamer .card-text .effect.main,
+  .option .card-text .effect.main{
+    top: 19.4em;
   }
 
 .card-text .inherit{
@@ -304,7 +313,9 @@
   /* height: 100px; background: pink; */
 }
 
-.egg .card-text .inherit{ top: 29.5em }
+.egg .card-text .inherit,
+.tamer .card-text .inherit,
+.option .card-text .inherit{ top: 29.5em }
 
 .card-text .effect.main .line,
 .card-text .inherit .line{ 

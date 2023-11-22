@@ -31,7 +31,7 @@ const Card = ({set,card,size}) => {
 
   return (<div className={"card "+colorClass+" "+typeClass+" "+size} ref={cardRef}>
     {/* <CardBase set={set} cardNo={card} size={size} /> */}
-    <div className='art-wrap'><img className='card-art' src={`https://rossdanielconover.com/dgmn-card-database/${set}/${set}-${formatCardNumber(set,card)}.png`}/></div>
+    {/* <div className='art-wrap'><img className='card-art' src={`https://rossdanielconover.com/dgmn-card-database/${set}/${set}-${formatCardNumber(set,card)}.png`}/></div> */}
     <CardBase cardSet={set} cardNumber={card} />
     <CardText cardSet={set} cardNumber={card} />
     <ContextMenu origin='card' cardNo={set+'-'+formatCardNumber(set,card)} cardRef={cardRef}/>

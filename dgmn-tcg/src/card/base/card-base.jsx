@@ -14,10 +14,11 @@ const CardBase = ({cardSet,cardNumber}) => {
   const dgmnLevel = cardData.type === 'dgmn' ? cardData.level : 0;
 
   return (<div className="card-base">
-    <svg width="100%" height="100%" viewBox="0 0 180 252">
+    <svg width="100%" height="100%" viewBox="0 0 180 251.86">
       <Frame cardType={cardData.type} dgmnLevel={dgmnLevel}/>
       <Cost cardType={cardData.type} evoColors={cardData?.evoCost?.colors} />
       <MainInfo cardType={cardData.type}  dgmnLevel={dgmnLevel} />
+      {(cardData.type === 'option' || cardData.type === 'tamer') && <Inherit cardType={cardData.type}/>}
       {(cardData.type === 'dgmn' || cardData.type === 'egg') && cardData.level < 6 && 
         <Inherit cardType={cardData.type} />}
       {cardData.effect && cardData.effect.length > 0 && <CardBaseEffect cardType={cardData.type} dgmnLevel={cardData.level}/>}

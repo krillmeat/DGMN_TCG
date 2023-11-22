@@ -12,7 +12,7 @@ const CardBaseInherit = ({cardType}) => {
       case 'dgmn':
         return InheritDigimon;
       default:
-        return InheritDigimon;
+        return InheritEgg;
     }
   },[cardType]);
 

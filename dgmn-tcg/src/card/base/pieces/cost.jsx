@@ -1,6 +1,7 @@
 import React from 'react';
 import {ReactComponent as PlayCostDigimon} from '../pieces/svgs/SVG_Play-Cost_Digimon (3-5).svg';
 import {ReactComponent as EvoCostDigimon} from '../pieces/svgs/SVG_Evo_Digimon (3-5).svg';
+import {ReactComponent as PlayCostOption} from '../pieces/svgs/SVG_Play-Cost_Option.svg';
 import { removeSvgWrap } from '../base.utils';
 
 const buildEvoColorClasses = evoColors => {
@@ -12,7 +13,7 @@ const buildEvoColorClasses = evoColors => {
 
 const CardBaseCost = ({cardType,evoColors}) => {
   return (<g className='cost'>
-    <g className='play'>{removeSvgWrap(PlayCostDigimon)}</g>
+    <g className='play'>{cardType !== 'option' ? removeSvgWrap(PlayCostDigimon) : removeSvgWrap(PlayCostOption)}</g>
     {cardType === 'dgmn' && 
       <g className={'evo '+buildEvoColorClasses(evoColors)}>
         {removeSvgWrap(EvoCostDigimon)}

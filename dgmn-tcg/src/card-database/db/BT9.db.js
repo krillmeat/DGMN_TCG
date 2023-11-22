@@ -24,7 +24,14 @@ export const BT9 = [
     effect: ["<<On Play>> Reveal the top 3 cards of your deck. Add 1 Digimon card with","[X Antibody] in its traits and 1 Option card with [X Antibody] in its traits among","them to your hand. Place the rest at the bottom of your deck in any order.","<<Your Turn>> When one of your Digimon digivolves into a same-level Digimon","with [X Antibody] in its traits, you may suspend this Tamer to gain 1"," memory and <<Draw 1>>."],
     inherit: ["<<Security>> Play this card without paying its","memory cost."],
     special: ["cnd-3","txt-sm-2","lead-sm-2"/*,"full-art"*/]
-  },{},{},{},{},{},{},{},{}, // 100
+  },{},{},{},{},{},{},
+  { type: 'option', name:'Sunrise Buster', no:99, set: 'BT9', rarity: 'R',
+    colors: ['yellow','red'],
+    traits:[],
+    cost: 5,
+    effect: ["<<Main>> You may play 1 yellow or red Tamer card from your","hand without paying its memory cost. Then, 1 of your","opponent's Digimon gets -3000 DP for the turn for each","yellow and/or red Tamer you have in play."],
+    inherit: ["<<Security>> Activate this card's <<Main>> effect."]
+  },{}, // 100
   {},{},{},{},{},{},{},{},{},{},
   {},
   { type:'dgmn', name: 'DeathXmon', no:112, set:'BT9', rarity:'SEC',

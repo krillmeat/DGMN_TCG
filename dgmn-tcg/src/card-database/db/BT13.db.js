@@ -74,4 +74,14 @@ export const BT13 = [
       inherit: ["<<Security>> Play this card without paying the cost."],
       modClasses: ['effect-cnd-2','effect-sm-1','effect-six-lines']
     },
+    {},{},{},{},{},{},{},{},
+    {
+      type: 'option', name: 'Final Shining Burst', no:104, set:'BT13', rarity:'R',
+      colors: ['red','yellow'],
+      traits:[],
+      cost:8,
+      effect: ["<<Main>> 1 of your opponent's Digimon gets -12000 DP until","the end of your opponent's turn. Then, you may play 1","[Marcus Damon] from your hand without paying the cost."],
+      inherit: ["<<Security>> Activate this card's [Main] effect."],
+      modClasses: []
+    }
 ]

@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { useState } from 'react';
 import { AppContext } from '../../../app';
 
-const ALL_SETS = ['BT13','EX4','BT12','BT11','EX3','BT10','BT9','EX2','BT8','EX1','BT7','ST3','ST2','ST1']
+const ALL_SETS = ['BT13','EX4','BT12','BT11','EX3','BT10','BT9','EX2','BT8','EX1','BT7','ST3','ST2','ST1','P']
 
 const SetFilter = () => {
   const [context,setContext] = useContext(AppContext);

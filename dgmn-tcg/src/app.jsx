@@ -20,7 +20,7 @@ const DEFAULT_CONTEXT = {
   isPopupOpen: false,
   popupCard: {set: '', cardNo: 0},
   printList: [CARDS.BT13[7],CARDS.BT13[7],CARDS.BT13[7]],
-  isDeckBuilderActive: true,
+  isDeckBuilderActive: false,
   currentDeck: DECK_LISTS.shineGrey,
   filters: {
     sets: ['BT13'],

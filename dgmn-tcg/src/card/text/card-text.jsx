@@ -42,7 +42,7 @@ const CardText = ({cardSet,cardNumber}) => {
       {cardData.effect && cardData.effect?.length !== 0 && <Effect effectLines={cardData.effect} /> }
 
 
-    {cardData.inherit?.length > 0 && <Inherit inheritLines={cardData.inherit} />}
+    {cardData.inherit?.length > 0 && <Inherit cardType={cardData.type} inheritLines={cardData.inherit} />}
   </div>)
 }
 

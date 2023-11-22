@@ -31,6 +31,10 @@ export const matchStyleConst = property => {
       return 'cost-marker cost-marker-black';
     case 'fill:#faf':
       return 'cost-marker cost-marker-purple';
+    case 'fill:#00496a':
+      return 'option-frame-color';
+    case 'fill:#efefef':
+      return 'option-effect-background';
     default:
       return 'UNKNOWN-CLASS'
   }
