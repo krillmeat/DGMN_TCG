@@ -1,0 +1,93 @@
+.print-mode{
+  margin-top: 4rem;
+  margin-left: 2.5rem;
+  width: 8.5in;
+  display: flex;
+    flex-wrap: wrap;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  body{background: none }
+  #root{ background: none }
+
+  .print-mode *{
+    color-adjust: exact
+  }
+
+  nav{ display: none !important }
+}
+
+.print-mode svg .card-frame{ fill: #FFF !important }
+.print-mode svg .main-info .rarity{ transform: translate(15.2rem, .3rem)}
+.print-mode svg .main-info .rarity.SEC{ transform: translate(14.9rem, .2rem)}
+
+.print-mode .card.print .card-base.art{ display: none }
+  .print-mode .card.print .card-base-svg.full-art .card-base.art{ display: block }
+
+.print-mode svg .card-effect-block > path:first-of-type{ display: none !important }
+
+.print-mode svg .play-cost > path:first-of-type{ fill: #000 !important }
+.print-mode svg .play-cost > path:nth-of-type(2){ fill: #FFF !important }
+.print-mode svg .play-cost > path:nth-of-type(3){ display: none !important }
+.print-mode svg .play-cost > path:nth-of-type(4){ display: none !important }
+.print-mode svg .play-cost > path:nth-of-type(5){ display: none !important }
+.print-mode svg .play-cost .play-cost-text{ display: none !important }
+
+.print-mode svg .evo-cost .cover-up{ fill: #FFF }
+.print-mode svg .evo-cost > path.evo-back{ fill: #FFF }
+.print-mode svg .evo-cost > .mini-text{display: none !important}
+
+
+.print-mode .card-text .card-effect{ color: #000 }
+.print-mode .card-text .card-effect .tag{ color: #FFF }
+.print-mode .card-text .play-cost{ color: #000 !important }
+.print-mode .card-text .evo-cost .lv-req{ display: none !important }
+.print-mode .card-text .evo-cost{ left: .25em }
+.print-mode .card-text .evo-cost .evo-value{ margin-top: .15em }
+.print-mode .card-text .dgmn-name{ color: #FFF !important }
+
+.print-mode .tag{ -webkit-text-stroke: .01em #FFF }
+.print-mode .tag.blue{ background: #015CB6 !important }
+.print-mode .tag.orange{ background: #CB5E02 !important }
+  .print-mode .tag.orange::before,
+  .print-mode .tag.orange::after{display: none;}
+.print-mode .tag.purple{ background: #A51666 !important }
+
+.print-mode .small-info{ font-weight: 500 !important }
+.print-mode .card-effect > p .tag,
+.print-mode .inherit-effect > p.line{ font-weight: 500 !important; }
+
+
+
+/* WEIRD SPECIFICS */
+
+.dgmn .card-text .main-info .dgmn-name.offset-7{ padding-top:0 }
+.print-mode .option svg .card-frame{ fill: #FFF !important }
+.print-mode .option .card-type-label{ color: #000 }
+
+.print-mode .card-wrap{ background: none; box-shadow: none }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  MAIN INFO                                                              ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.print-mode .card-text .main-info { top: 27.65em }
+  .print-mode .card-text .main-info.shifted-down { top: 31.71em }
+  .print-mode .card-text .main-info.shifted-up{ top: 26.9em }
+
+.print-mode .card-text .card-effect{ width: calc(100% - 4.4em )}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  INHERIT                                                                ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.print-mode .card-text .inherit {top: 30.7em }
+  .print-mode .card-text .inherit.shifted-up {top: 30em }
+.card-text .inherit > p{ margin-bottom: .1em }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  TAGS                                                                   ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.print-mode .tag{ border-radius: 1px }

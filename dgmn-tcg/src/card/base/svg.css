@@ -1,0 +1,82 @@
+.fill-white{ fill: #FFF }
+.fill-color-one{ fill: #00FF00 }
+.fill-color-two{ fill: #00FFFF }
+
+/* COLORS */
+.color-one-red .fill-color-one,
+.color-two-red .fill-color-two{ fill: #E7002C }
+
+.color-one-blue .fill-color-one,
+.color-two-blue .fill-color-two{ fill: #0094DC }
+
+.color-one-yellow .fill-color-one,
+.color-two-yellow .fill-color-two{ fill: #FFE100 }
+
+.color-one-green .fill-color-one,
+.color-two-green .fill-color-two{ fill: #009B6B }
+
+.color-one-black .fill-color-one,
+.color-two-black .fill-color-two{ fill: #000 }
+
+.color-one-purple .fill-color-one,
+.color-two-purple .fill-color-two{ fill: #6456A3 }
+
+/* EVO COST OVERRIDES */
+.card-base .cost .evo.evo-color-one-blue .fill-color-one,
+.card-base .cost .evo.evo-color-two-blue .fill-color-two{ fill: #0094DC }
+.card-base .cost .evo.evo-color-one-green .fill-color-one,
+.card-base .cost .evo.evo-color-two-green .fill-color-two{ fill: #009B6B }
+
+
+/* COST */
+.cost-dark-blue-fill{ fill:#031132 }
+.cost-mid-blue-fill{ fill: #133354 }
+.cost-gray-fill{ fill: #99a8b3 }
+.evo-cost-blue-fill{ fill: #274D70 }
+
+.cost-marker{ fill: #99A8B3 }
+
+.color-one-red .play .cost-marker-red,
+.color-two-red .play .cost-marker-red,
+.card-base .cost .evo.evo-color-one-red .cost-marker-red,
+.card-base .cost .evo.evo-color-two-red .cost-marker-red{ fill: #E7002C }
+
+.color-one-blue .play .cost-marker-blue,
+.color-two-blue .play .cost-marker-blue,
+.card-base .cost .evo.evo-color-one-blue .cost-marker-blue,
+.card-base .cost .evo.evo-color-two-blue .cost-marker-blue{ fill: #0094DC }
+
+.color-one-yellow .play .cost-marker-yellow,
+.color-two-yellow .play .cost-marker-yellow,
+.card-base .cost .evo.evo-color-one-yellow .cost-marker-yellow,
+.card-base .cost .evo.evo-color-two-yellow .cost-marker-yellow{ fill: #FFE100 }
+
+.color-one-green .play .cost-marker-green,
+.color-two-green .play .cost-marker-green,
+.card-base .cost .evo.evo-color-one-green .cost-marker-green,
+.card-base .cost .evo.evo-color-two-green .cost-marker-green{ fill: #009B6B }
+
+.color-one-purple .play .cost-marker-purple,
+.color-two-purple .play .cost-marker-purple,
+.card-base .cost .evo.evo-color-one-purple .cost-marker-purple,
+.card-base .cost .evo.evo-color-two-purple .cost-marker-purple{ fill: #6456A3 }
+
+
+.effect > g:first-of-type{ opacity: .95 }
+
+.option-frame-color{ fill: #00496A }
+.option-effect-background{ fill: #EFEFEF }
+
+/* TAMER OPTION MAIN INFO BAR */
+.card.tamer .card-base > svg .main-info > g:last-of-type,
+.card.option .card-base > svg .main-info > g:last-of-type{ display: none }
+
+
+/*export const COLORS = {
+  red: "#E7002C",
+  blue: "#0094DC",
+  yellow: "#FFE100",
+  green: "#009B6B",
+  black: "#000",
+  purple: "#6456A3",
+  white*/

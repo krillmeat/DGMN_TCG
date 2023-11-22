@@ -1,0 +1,120 @@
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  POPOUT                                                                 ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.deck-builder-popout{
+  /* background: pink; */
+  position: fixed;
+  top: 4.5rem; right: 0px;
+  width: 40%; height: calc(100vh - 4.5rem);
+  background: #0F0F0F;
+  padding: 2.5rem;
+
+  color: #FFF;
+}
+
+.deck-builder-popout .deck-name{
+  position: absolute;
+  top: 2.5rem; left: 2.5rem;
+  font-size: 2.75rem;
+  margin-bottom: 4rem;
+  letter-spacing: 1px;
+}
+
+
+.deck-card-list{
+  display: flex;
+    flex-wrap: wrap;
+  height: calc(100% - 8rem);
+  overflow-y: scroll;
+  margin-top: 8rem;
+}
+
+  .deck-card-list::-webkit-scrollbar{ width: .6rem }
+  .deck-card-list::-webkit-scrollbar-thumb{ width: 100%; background: #FFF }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  DECK LIST MENU                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.deck-builder-popout .deck-list-menu{
+  position: absolute;
+  top: 2.5rem; left: 2.5rem;
+  width: 100%;
+}
+
+  .deck-list-menu ul{
+    display: flex;
+  }
+
+  .deck-list-menu ul li{
+    margin-right: .8rem;
+  }
+
+.deck-builder-popout button.copy-deck{
+  position: absolute;
+  top: 2.5rem; right: 2.5rem;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  CARD COUNTS                                                            ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.deck-builder-popout .card-counts{
+  position: absolute;
+  font-size: 1.8em;
+  top: 6rem;
+}
+
+
+.deck-card-wrapper{ position: relative; width: 150px; height: 210px; margin: 0 1.6rem 3.2rem 1.6rem; }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  CARD CONTROLS                                                          ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.deck-card-wrapper .card-controls{
+  position: absolute;
+    left:0; bottom: -2rem;
+  width: 100%;
+  display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.deck-card-wrapper .count{
+  width: 4rem; height: 4rem;
+  border-radius: 50%;
+  border: .4rem solid #0F0F0F;
+  background: #FFF;
+
+  font-size: 1.5em;
+  font-family: 'adelle-sans-condensed', sans-serif;
+  font-weight: 700;
+  color: #0F0F0F;
+  text-align: center;
+  padding-top: .9rem;
+}
+
+.deck-card-wrapper .card-controls button{
+  width: 3.2rem; height: 3.2rem;
+  background: #333;
+  border: .4rem solid #0F0F0F;
+  border-radius: 50%;
+  color: #FFF;
+  padding: 0;
+
+  opacity: 0;
+}
+
+  .deck-card-wrapper:hover .card-controls button{ opacity: 1 }
+
+.deck-card-wrapper .card-controls button.minus{ border-right:  4px solid #0f0f0f }
+.deck-card-wrapper .card-controls button.plus{ border-left: 4px solid #0f0f0f }
+
+.deck-card-wrapper .card-controls button.disabled{
+  background: #1A1A1A;
+  color: #333;
+}

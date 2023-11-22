@@ -1,0 +1,45 @@
+{
+  "DB Egg": {
+    "prefix": "db_egg",
+    "body": [
+      "{ type:'egg', name:'$1', no:$2, set:'$3', rarity: '$4',",
+      "  level: 2, colors: ['$5'],",
+      "  form: 'In-Training', traits: ['Lesser'],",
+      "  inherit: [\"$6\"]},"
+    ]
+  },
+  "DB Dgmn": {
+    "prefix": "db_dgmn",
+    "body": [
+      "{ type:'dgmn', name: '$1', no:$2, set:'$3', rarity:'$4',",
+      "  level: $5, colors: ['$6'],",
+      "  form: '$7', attr: '$8', traits: ['$9'],",
+      "  dp: $10, cost: $11, evoCost: {$12},",
+      "  effect: [\"$13\"],",
+      "  inherit: [\"$14\"]},"
+    ]
+  },
+  "DB Tamer": {
+    "prefix": "db_tamer",
+    "body": [
+      "{ type:'tamer', name: '$1', no:$2, set:'$3', rarity:'$4',",
+      "  colors: ['$5'],",
+      "  traits: [],",
+      "  cost: $6,",
+      "  effect: [\"$7\"],",
+      "  inherit: [\"$8\"]},"
+    ]
+  },
+  "Dark Color": {
+    "prefix": "color_dark",
+    "body": [
+      "#1A1A1A"
+    ]
+  },
+  "Light Color": {
+    "prefix": "color_light",
+    "body": [
+      "#333"
+    ]
+  }
+}

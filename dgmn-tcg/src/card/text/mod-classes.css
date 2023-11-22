@@ -1,0 +1,21 @@
+/* NAME */
+.card-text.name-cnd-1 .card-name{ letter-spacing: -.01em }
+.card-text.name-cnd-2 .card-name{ letter-spacing: -.02em }
+.card-text.name-cnd-3 .card-name{ font-size: 1.5em; letter-spacing: -.03em }
+.card-text.name-cnd-4 .card-name{ font-size: 1.4em; letter-spacing: -.04em }
+.card-text.name-cnd-5 .card-name{ font-size: 1.4em; letter-spacing: -.06em }
+
+.card-text.effect-five-line .effect.main .line{ margin-bottom: .2em }
+.card-text.effect-six-line .effect.main .line{ margin-bottom: 0em }
+
+.card-text.effect-cnd-1 .effect.main .line{ letter-spacing: 0em }
+.card-text.effect-cnd-2 .effect.main .line{ letter-spacing: -0.01em }
+
+.dgmn-6 .card-text.effect-sm-1 .effect.main,
+.dgmn-7 .card-text.effect-sm-1 .effect.main{ top: 24.7em }
+.card-text.effect-sm-1 .effect.main .line{ font-size: .8em; }
+.card-text.effect-sm-2 .effect.main .line{ font-size: .8em; }
+
+/* INHERIT */
+.card-text.inherit-cnd-1 .inherit .line{ letter-spacing: -.02em }
+.card-text.inherit-four-lines .inherit .line{ margin-bottom: -.01em }

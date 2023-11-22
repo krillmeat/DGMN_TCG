@@ -1,0 +1,28 @@
+.card-database{ 
+  width: 100%;
+  padding: .8rem;
+    padding-top: calc(8.7rem + .8rem);
+  background: #1A1A1A;
+}
+
+.card-list{ 
+  width: 100%; 
+    min-width: 375px;
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-database.deck-mode .card-list{
+  padding-right: 40%;
+}
+
+  @media (min-width: 800px){
+    .card-list{ padding-left: 25rem }
+  }
+
+p.empty-database{
+  font-family: 'adelle-sans-condensed', sans-serif;
+  font-size: 2em;
+  color: #AAA;
+}

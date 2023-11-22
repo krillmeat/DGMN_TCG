@@ -1,0 +1,249 @@
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  CONTAINER                                                              ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.card{position: relative;}
+
+.card.xs{ width: 100px; font-size: .4rem }
+.card.s{ width: 150px; font-size: .6rem }
+.card.m{ width: 200px; font-size: .8rem }
+.card.l{ width: 250px; font-size: 1rem }
+.card.xl{ width: 300px; font-size: 1.2rem }
+.card.xxl{ width: 350px; font-size: 1.4rem }
+
+.card.print{ width: 2.5in; font-size: .965rem }
+
+.card .card-wrap{ 
+  position: relative;
+  margin: 0 auto;
+  border-radius: 5%;
+  background: rgba(0,0,0,.25);
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.5),
+                0 2px 8px 1px rgba(0,0,0,.75);
+}
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  SVG                                                                    ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.st0{fill:#EEEEEE;}
+.st1{fill:#05FFF3;}
+.st2{fill:#0A284C;}
+.st3{fill:#04172B;}
+.st4{fill:#FF06FF;}
+.st5{opacity:0.5;}
+.st6{fill:#1F4F71;}
+.st9{fill:#000;}
+.st10{fill:none;stroke:#E7002C;stroke-width:3px}
+
+.c-white{fill:#FFF}
+.c-red{fill: #E7002C }
+.c-blue{fill: #0094DC }
+
+svg{ position: absolute }
+svg.content{ position: relative }
+
+svg.card-base clipPath > path{ transform:translate(.95rem,1.25rem)}
+
+.card-base{ width: 100%; font-family: 'adelle-sans-condensed', sans-serif; font-weight: 300; overflow: hidden }
+/* .card-frame{ stroke: rgba(0,0,0,.2); stroke-width: .1rem } */
+
+.card-base-svg.full-art svg .card-frame{ display: none }
+
+svg .trim{ transform: translate(1rem,1.3rem) }
+
+svg .play-cost{ transform: translate(.4rem,.8rem) }
+.dgmn svg .play-cost-text,
+.tamer svg .play-cost-text{ fill: #FFF }
+.option svg .play-cost-text{ fill: #0A284C }
+svg .evo-cost{transform: translate(.6rem,4.45rem)}
+
+.dgmn svg .main-info{ transform: translate(.9rem,19.7rem) }
+.dgmn svg .main-info.no-inherit{ transform: translate(.9rem,22.7rem) }
+.egg svg .main-info,
+.tamer svg .main-info,
+.option svg .main-info{ transform: translate(.9rem,19.1rem)}
+
+.card-base-svg.full-art svg .main-info > path{ opacity: .9 }
+
+
+svg .main-info .rarity{ transform: translate(15.2rem, .2rem)}
+svg .main-info .rarity.SEC{ transform: translate(14.9rem, .2rem)}
+
+.dgmn svg .card-effect-block{ transform: translate(1rem,14.45rem) }
+.dgmn svg .card-effect-block.no-inherit{ transform: translate(1rem,16.9rem) }
+.tamer svg .card-effect-block,
+.option svg .card-effect-block{ transform: translate(1rem,13.8rem)}
+
+svg .card-effect-block.dgmn-tall{ transform: translate(1rem, 13.25rem) }
+.dgmn svg .card-effect-block.dgmn-tall.no-inherit{ transform: translate(1rem,16.1rem) }
+
+.egg svg .inherit .img-frame{ transform: translate(1rem,.4rem) }
+.dgmn svg .inherit .img-frame{ transform: translate(1rem,.45rem)}
+.dgmn svg .inherit{ transform: translate(9px,217px) }
+.egg svg .inherit,
+.tamer svg .inherit,
+.option svg .inherit{ transform: translate(.9rem,21.1rem)}
+
+.card-base-svg.full-art svg .inherit > path{ opacity: .9 }
+
+.grid-backing{transform:translate(0,.1rem)}
+.grid-backing line{stroke-width: .1rem}
+.security-icon{ transform: translate(.75rem,.1rem) }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  COLOR                                                                  ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  RED                                                                    ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.red svg .trim,
+.red svg .evo-color,
+.red svg .main-info .back,
+.red svg .inherit .security-icon .trim { fill: #E7002C }
+.red svg .effect-line{ stroke: #E7002C }
+.red svg .inherit .security-icon .outer,
+.red svg .inherit .security-icon .back { fill: #8D010B }
+.red svg .inherit .security-icon .shadow{ fill: #6E0000 }
+.red svg .inherit .grid-backing line{ stroke: #EA4239 }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  BLUE                                                                   ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* 0094DC */
+.blue svg .trim,
+.blue svg .evo-color,
+.blue svg .main-info .back,
+.blue svg .inherit .security-icon .trim{ fill: #0094DC }
+
+.red svg .main-info .front,
+.blue svg .main-info .front,
+.yellow svg .main-info .front,
+.green svg .main-info .front,
+.purple svg .main-info .front,
+.white svg .main-info .front{ fill: #000 }
+
+.red.black svg .trim > path:last-of-type{ fill: #000 }
+
+
+.c-green{ fill: #009B6B }
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  TEXT                                                                   ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.non-svg-wrap{
+  position: absolute;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+}
+
+.card-text{
+  position: relative;
+  width: 100%; height: 100%;
+}
+
+.card-text .card-type-label{
+  position: absolute;
+  top: 1.8em; left: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .63em;
+}
+
+.option .card-text .card-type-label{ color: #FFF }
+
+.card-text.full-art .card-type-label{
+  text-shadow: -.1rem -.1rem 0 #FFF, 0 -.1rem 0 #FFF, .1rem -.1rem 0 #FFF,
+               -.1rem 0 0 #FFF, .1rem 0 0 #FFF,
+               -.1rem .1rem 0 #FFF, 0 .1rem 0 #FFF, .1rem .1rem 0 #FFF;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+::::::::::::::::::::  DP                                                                     ::::::::::::::::::::
+::::::::::::::::::::                                                                         ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.dp{
+  position: absolute;
+  top: 1.2em; right: 1.8em;
+  text-align: right;
+}
+
+.dp .label{
+  position: absolute;
+  top: 0; right: 0;
+  font-size: .9em;
+}
+
+.dp .value{
+  position: absolute;
+  top: -.15em; right: 0;
+  font-size: 2.8em;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  font-weight: 700;
+  text-shadow: 0 0 .05rem #000;
+}
+
+  .card.xs .dp .value{text-shadow: none}
+
+.dp .value > span{
+  font-size: .55em;
+  font-weight: 700;
+  font-family: 'nimbus-sans-condensed', sans-serif;
+  margin-left: .05em;
+  text-shadow: none;
+}
+
+.dp.double-digit .value{ letter-spacing: -.05em; }
+.dp.double-digit .value > span{ margin-left: .1em; letter-spacing: 0 }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::  TAGS                                                                   ::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.yellow .tag{ color: #FFF !important }
+
+.card-text .card-effect .tag,
+.card-text .inherit .tag{
+  position: relative;
+  padding: 0 .5em .1em .4em;
+  border-radius: 2px;
+  font-size: .8em;
+  letter-spacing: .02em !important;
+}
+
+.option .card-text .card-effect .tag{ color: #FFF }
+
+.tag.blue{ background:linear-gradient(180deg, rgba(29,16,14,1) 0%, rgba(0,107,189,1) 100%) }
+.tag.orange{ margin: .5em; background:linear-gradient(180deg, #962001 0%, #CD6003 100%) }
+  .tag.orange::before,.tag.orange::after{
+    content: '';
+    height: 1.15em; width: 1.15em;
+    position: absolute;
+    transform: rotate(45deg);
+    background:linear-gradient(135deg, #962001 0%, #CD6003 100%);
+    border-radius: 2px; }
+  .tag.orange::before{ top: .21em; left: -.4em }
+  .tag.orange::after{ top: .21em; right: -.4em }
+  .tag.orange > span{ position: relative; z-index: 10; }
+.tag.purple{ background:linear-gradient(180deg, rgba(93,12,73,1) 0%, rgba(194,83,134,1) 100%) }
+.tag.green{ background:linear-gradient(180deg, #1F9D53 0%, #205832 100%)}

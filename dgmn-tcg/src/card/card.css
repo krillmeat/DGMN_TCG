@@ -1,0 +1,28 @@
+.card{
+  position: relative;
+}
+
+.card.xs{ width: 100px; height: 140px; font-size: .4rem }
+.card.s{ width: 150px; height: 210px; font-size: .6rem }
+.card.m{ width: 200px; height: 280px; font-size: .8rem }
+.card.l{ width: 250px; height: 350px; font-size: 1rem }
+.card.xl{ width: 300px; height: 420px; font-size: 1.2rem }
+.card.xxl{ width: 350px; height: 490px; font-size: 1.4rem }
+.card.xxxl{ width: 400px; height: 560px; font-size: 1.6rem }
+
+.art-wrap{
+  position: relative;
+    top: 3%; left: 4%;
+  width: 92%; height: 75%;
+  overflow: hidden;
+}
+
+.card-art{
+  position: absolute;
+    top: 0; left: -2%;
+  width: 104%;
+}
+
+.card-list .card{
+  margin: 0 1rem 1rem 1rem ;
+}

@@ -1,0 +1,80 @@
+.card-text .inherit{
+  position: absolute;
+  left: 6.6em;
+  font-family: "adelle-sans-condensed", sans-serif;
+
+  top: 30.75em; 
+  color: #FFF;
+}
+
+.card-text .inherit.shifted-up{ top: 30em }
+.card-text .inherit.text-black{ color: #000 }
+.card-text .inherit.text-black .tag{ color: #FFF }
+
+.card-text .inherit .inherit-label{
+  position: absolute;
+}
+
+.card-text .inherit.ess .inherit-label{
+  top: 2.8em; left: -11.4em;
+  font-size: .55em;
+  transform: rotate(90deg);
+}
+
+.card-text .inherit.security .inherit-label{
+  top: 5em; left: -7.25em;
+  font-size: .6em;
+}
+
+.card-text .inherit > p{
+  font-size: .85em;
+  letter-spacing: .04em;
+  margin-bottom: .3em;
+}
+
+.card-text .inherit.condensed > p{
+  font-size: .8em;
+  letter-spacing: .03em;
+  margin-bottom: .3em;
+}
+
+/* .inherit-effect{
+  position: absolute;
+  top: 30.9em; left: 6.6em;
+}
+
+.egg .inherit-effect,
+.tamer .inherit-effect,
+.option .inherit-effect{ top: 29.85em }
+
+.inherit-effect .inherit-label{
+  position: absolute;
+  color: #FFF;
+}
+
+.egg .inherit-effect .inherit-label,
+.dgmn .inherit-effect .inherit-label{
+  top: 2.5em; left: -11.8em;
+  width: 7em;
+  font-size: .55em;
+  transform: rotate(90deg)
+}
+
+.option .inherit-effect .inherit-label,
+.tamer .inherit-effect .inherit-label{
+  top: 5em; left: -7.25em;
+  font-size: .6em;
+}
+
+.inherit-effect > p.line{
+  font-family: 'adelle-sans-condensed', sans-serif; 
+  font-weight: 300;
+  font-size: .76em;
+  color: #FFF;
+  letter-spacing: .01em;
+  margin-bottom: .5em;
+}
+.yellow .inherit-effect .inherit-label,
+.yellow .inherit-effect > p.line{ color: #000 }
+
+.condensed-inherit .inherit-effect > p.line{ letter-spacing: -.02em } */
